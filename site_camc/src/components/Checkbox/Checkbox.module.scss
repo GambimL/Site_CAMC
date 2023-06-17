@@ -1,0 +1,40 @@
+@import "../../styles/theme.module.scss";
+
+.checkbox {
+  display: flex;
+  
+  *:hover{
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 0.15em;
+    margin-right: 0.5em;
+    border: 0.15em solid $primary;
+    outline: none;
+    cursor: pointer;
+  }
+  @media (max-width: 740px) {
+    left: 4.5rem;
+  }
+}
+.checked {
+  background-color: $primary;
+  position: relative;
+  
+  &::before {
+    content: "\2714";
+    font-size: 1.5em;
+    color: $surface;
+    position: absolute;
+    right: 1px;
+    top: -3px;
+  }
+  &:focus {
+    box-shadow: 0 0 10px $primary;
+  }
+}

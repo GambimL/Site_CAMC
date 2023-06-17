@@ -1,13 +1,10 @@
-import Header from "./components/Header/Header"
+import { Header } from "./components/Header/Header"
 
-function App() {
-
+export function App() {
 
   return (
     <div className="h-screen">
-      <Header></Header>
+      <Header />
     </div>
   )
 }
-
-export default App
