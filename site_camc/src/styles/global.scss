@@ -1,0 +1,23 @@
+@import "../styles/theme.module.scss";
+
+
+html,body {
+  font-family: $font-default;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  background-color: $surface;
+  color: $on-surface-medium-emphasys;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: $on-primary-high-emphasys;
+  font-size: 25px;
+}
+span{
+  display: block;
+}

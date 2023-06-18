@@ -1,8 +1,10 @@
 import logoFisMed from '../../assets/logoFisMed.png'
-const buttons = ['Programação', 'Minicursos', 'Palestrantes', 'Opinião', 'Contatos']
+import { Link } from '../Link'
+
+const titles = ['Programação', 'Minicursos', 'Palestrantes', 'Opinião', 'Contatos']
 
 export function Header() {
-    
+
     return <div className='flex flex-col h-screen overflow-hidden fixed'>
         <header className="bg-zinc-950 flex 
             fixed h-32 h w-full
@@ -15,12 +17,9 @@ export function Header() {
                 <img src={logoFisMed} className="justify-start scale-150 
                 h-28 w-30 
                 pt-6 pr-6"></img>
-                {buttons.map((text) => (
-                    <button key={text} className="flex mx-10 text-white 
-                    hidden sm:block">
-                        {text}</button>
-                ))}
-            
+                
+                <Link titles={titles} />
+
             </div>
         </header>
     </div>
