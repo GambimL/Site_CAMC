@@ -30,6 +30,7 @@ html, body{
   color: var(--surface);
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
+  background-color: rgb(30 41 59);
 }
 
 a {

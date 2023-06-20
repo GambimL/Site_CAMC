@@ -1,14 +1,14 @@
-import { Layout } from "../../components/Layout";
 import '../../styles/styles.css'
+import { Layout } from "../../components/Layout";
+import { Course } from "../../components/Course";
 
 export function Home() {
-
   return (
     <>
       <Layout>
         <div className="bg-fixed bg-no-repeat h-screen bg-background-initial flex flex-col bg-cover"
         >
-          <div className="grid grid-row-2 gap-10 content-center h-screen">
+          <div className="grid gap-10 content-center h-screen">
 
             <img src='https://static.wixstatic.com/media/48eda6_71c4d245ff094ec7aeaeaca82b827744~mv2.png/v1/crop/x_0,y_420,w_1080,h_320/fill/w_799,h_237,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%20(3).png' className=" justify-center justify-self-center"></img>
 
@@ -20,10 +20,21 @@ export function Home() {
           </div>
         </div>
       </Layout>
-      <div className="dark:bg-slate-800 bg-white grid grid-rows-2 h-screen justify-center items-center ">
-        <h1 className="dark:text-white text-cyan-950 text-5xl font-bold">
-          IX JORNADA DE FÍSICA MÉDICA
+      <div className="grid pt-5 md:p-8 space-y-4 h-screen justify-center items-center gap-10">
+        <h1 className="dark:text-white text-cyan-950 text-4xl font-bold uppercase text-center">
+          IX jornada de física médica
         </h1>
+        <div className='grid grid-cols-2 gap-6'>
+
+          <Course description="Determinação da unidade monitora em planejamento radioterápico" speaker="Carolina M. Isabela L. e Matheus F." />
+
+          <Course description="O que fazer após a graduação? Empreender!" speaker="Irradiation - Empresa Júnior de Física Médica" />
+
+          <Course description="Radioterapia Hands On: Planejamento de casos ao vivo no sistema Varian Eclipse™" speaker="William Trinca" />
+
+          <Course description="Inteligência Artificial em linguagem Python com aplicação em imagens médicas" speaker="Bruno Yukio Takara" />
+
+        </div>
       </div>
     </>
   )

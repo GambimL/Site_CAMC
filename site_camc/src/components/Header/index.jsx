@@ -7,7 +7,7 @@ export function Header() {
 
     return <div className='flex flex-col h-screen overflow-hidden fixed'>
         <header className="dark:bg-slate-900 bg-zinc-950 flex 
-            fixed h-32 h w-full
+            fixed sm:h-28 lg:h-32 w-full
             text-center border-b 
             border-grey p-4 font-bold">
             <div className="container mx-auto flex h-30 
