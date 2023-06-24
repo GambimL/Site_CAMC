@@ -14,12 +14,12 @@
 .main {
   grid-area: main;
   width: 100%;
-  display: flex;
+  display: grid;
 }
 
 .content {
-width: 100%;
-overflow-y: auto;
+  width: 100%;
+  overflow-y: auto;
 scrollbar-width: none;
 &::-webkit-scrollbar {
   display: none; 

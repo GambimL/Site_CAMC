@@ -1,0 +1,32 @@
+.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 500ms ease;
+}
+.notActive{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: 500ms ease;
+}
+.dropdownMenu{
+  position: absolute;
+  top: 90px;
+  right: 10px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  width: 200px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+  }
+  
+
+}

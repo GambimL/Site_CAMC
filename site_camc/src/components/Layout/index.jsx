@@ -7,9 +7,9 @@ export const Layout = ({ children }) => {
       <Header />
       <div className={styles.layout}>
         <main className={styles.main} role="main">
-          <div className={styles.content}>
             {children}
-          </div>
+          {/* <div className={styles.content}>
+          </div> */}
         </main>
       </div>
     </>
