@@ -21,8 +21,8 @@ export function Course() {
   return (
     descriptionsCourse.map((course) => {
       return <>
-        <div className='space-x-4 font-light'>
-          <div key={course.speaker} className="rounded-xl lg:w-96 lg:h-80 md:p-8 space-y-3 dark:bg-slate-900 font-bold grid gap-5 text-justify p-5 cursor-pointer hover:border-2 hover:border-sky-700 border-solid hover:border-y-0	">
+        <div key={course.speaker} className='space-x-4 font-light'>
+          <div className="sm:p-2 rounded-xl lg:w-96 lg:h-80 md:p-4 space-y-3 dark:bg-slate-900 font-bold grid gap-5 text-justify p-5 cursor-pointer sm:text-xl hover:border-2 hover:border-sky-700 border-solid hover:border-y-0">
             <h2 className="uppercase text-2xl text-center">minicurso</h2>
             <p >{course.description}</p>
             <span className="text-sky-800 dark:text-sky-700">{course.speaker}</span>

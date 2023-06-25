@@ -43,7 +43,7 @@ export function DropdownMenu() {
         {
           days.map((program) => {
             return <>
-              <a href={program.path} className="block px-4 py-3 capitalize transition-colors duration-200 transform dark:text-gray-300 rounded-md  hover:text-sky-700 text-white">
+              <a key={program} href={program.path} className="block px-4 py-3 capitalize transition-colors duration-200 transform dark:text-gray-300 rounded-md  hover:text-sky-700 text-white">
                 dia {program.day}
               </a>
             </>
