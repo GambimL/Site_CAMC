@@ -1,12 +1,10 @@
 import '../../styles/styles.css'
-import styles from '../../components/TextField/TextField.module.scss';
 import { Layout } from "../../components/Layout";
 import { Course } from "../../components/Course";
-// import { TextField } from "../../components/TextField";
+import { TextField } from "../../components/TextField";
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useForm, FormProvider, useFormContext } from "react-hook-form";
-import { ErrorMessage } from '../../components/ErrorMessage';
+import { useForm, FormProvider } from "react-hook-form";
 
 const createMessageFormSchema = z.object({
   name: z.string().nonempty({
@@ -94,7 +92,6 @@ export function Home() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
         <div className="grid py-8 p-2 place-items-center bg-slate-900 h-max">
@@ -154,28 +151,4 @@ export function Home() {
       </Layout>
     </>
   )
-}
-
-function TextField({ name, label, textarea, placeholder, ...rest }) {
-  const { register } = useFormContext();
-
-  return (
-    <div className={styles.container}>
-      <div className={styles.inputWrapper}>
-        {textarea ?
-          <textarea id="message" rows="6" className={`${styles.input} && {'block p-2.5 w-full text-md  dark:bg-gray-700 dark:border-gray-600 flex-1 rounded-lg border-2 border-solid dark:placeholder-white dark:focus:border-sky-700 font-bold'}`}
-            {...register(name)}
-            placeholder={placeholder}
-            {...rest}
-          ></textarea> : <input
-            className="flex-1 rounded-lg border dark:bg-gray-700 dark:placeholder-white dark:focus:border-sky-700 font-bold text-md border-gray-300 bg-gray-50"
-            {...register(name)}
-            placeholder=""
-            {...rest}
-          />}
-        {!placeholder && <label htmlFor={name}>{label || name}</label>}
-      </div>
-      <ErrorMessage field={name} />
-    </div>
-  );
 }

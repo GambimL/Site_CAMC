@@ -1,7 +1,7 @@
 // import { useFormContext } from 'react-hook-form';
 import styles from './Checkbox.module.scss';
 
-export function Checkbox({ name, label, checked, ...props }) {
+export function Checkbox({ label, checked, ...props }) {
   // const { register } = useFormContext();
 
   return (
