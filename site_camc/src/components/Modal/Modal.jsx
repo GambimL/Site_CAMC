@@ -1,4 +1,7 @@
 import { descriptionsCourse } from "../../utils/Constants";
+import { BiCalendar } from 'react-icons/bi'
+import { FaRegClock } from 'react-icons/fa'
+import { MdLocationOn } from 'react-icons/md'
 
 export function Modal({ closeModal, value }) {
   return <>
@@ -17,7 +20,7 @@ export function Modal({ closeModal, value }) {
                 </h4>
                 <button
                   type="button"
-                  className="col-start-8 box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none text-red-600 absolute top-10 right-10"
+                  className="col-start-8 box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none text-white absolute top-10 right-10"
                   onClick={() =>
                     closeModal(false)
                   }
@@ -42,10 +45,17 @@ export function Modal({ closeModal, value }) {
                 {descriptionsCourse[value].description}
               </p>
               <div className="items-center place-content-center gap-2 mt-3 sm:flex md:p-7 space-y-3">
-                <div className="grid grid-cols-3 gap-5 font-bold text-xl md:text-xl ">
-                  <span>16 Nov.</span>
-                  <span>10H</span>
-                  <span>Prédio 3 - Sala 215</span>
+                <div className="grid grid-cols-3 gap-5 font-bold text-md">
+                  <div className="flex gap-5">
+                    <BiCalendar className="place-self-center" /><span>{descriptionsCourse[value].day}</span>
+                  </div>
+                  <div className="flex gap-5">
+                    <FaRegClock className="place-self-center"
+                    /><span>{descriptionsCourse[value].time}</span>
+                  </div>
+                  <div className="flex gap-5">
+                    <MdLocationOn className="place-self-center" /><span>{descriptionsCourse[value].location}</span>
+                  </div>
                 </div>
               </div>
             </div>

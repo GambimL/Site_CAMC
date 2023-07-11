@@ -5,14 +5,11 @@ export function DropdownMenu() {
   const [open, setOpen] = useState(false);
   const menuRef = useRef(null);
   const days = [{
-    path: "#",
     day: "07/11"
   }, {
     day: "08/11",
-    path: "#"
   }, {
     day: "09/11",
-    path: "#"
   }];
 
   useEffect(() => {
@@ -43,7 +40,7 @@ export function DropdownMenu() {
         {
           days.map((program) => {
             return <>
-              <a key={program} href={program.path} className="block px-4 py-3 capitalize transition-colors duration-200 transform dark:text-gray-300 rounded-md  hover:text-sky-700 text-white">
+              <a key={program} href={"#Programação"} className="block px-4 py-3 capitalize transition-colors duration-200 transform dark:text-gray-300 rounded-md  hover:text-sky-700 text-white">
                 dia {program.day}
               </a>
             </>
