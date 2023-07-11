@@ -16,13 +16,12 @@ export function Header() {
                 h-28 w-30 
                 pt-6 pr-6"></img>
                 {buttons.map((text) => (
-                    <button key={text} className="flex mx-10 text-white 
+                    <a key={text} className="flex mx-10 text-white 
                     hidden sm:block">
-                        {text}</button>
+                        {text}</a>
                 ))}
             
             </div>
         </header>
     </div>
-
 }
