@@ -10,11 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "@emailjs/browser": "^3.11.0",
+>>>>>>> e131c102e1f028f636f8e4c65c48a87bf499f384
     "@hookform/resolvers": "^3.1.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.44.3",
+<<<<<<< HEAD
+=======
+    "react-icons": "^4.10.1",
+    "react-router-dom": "^6.14.1",
+>>>>>>> e131c102e1f028f636f8e4c65c48a87bf499f384
     "zod": "^3.21.4"
   },
   "devDependencies": {

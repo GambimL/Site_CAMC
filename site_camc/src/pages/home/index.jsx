@@ -5,6 +5,11 @@ import { TextField } from "../../components/TextField";
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm, FormProvider } from "react-hook-form";
+<<<<<<< HEAD
+=======
+import emailjs from '@emailjs/browser';
+import { Link } from 'react-router-dom';
+>>>>>>> e131c102e1f028f636f8e4c65c48a87bf499f384
 
 const createMessageFormSchema = z.object({
   name: z.string().nonempty({
@@ -37,13 +42,41 @@ export function Home() {
   const createMessageForm = useForm({
     resolver: zodResolver(createMessageFormSchema),
   })
+<<<<<<< HEAD
   const onSubmit = data => console.log(data);
+=======
+
+  const onSubmit = async data => {
+    // emailjs.send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, {
+    //   from_name: data.name,
+    //   message: data.doubt,
+    //   email: data.email,
+    //   course: data.course,
+    //   phone: data.phone
+    // }, import.meta.env.VITE_PUBLIC_KEY)
+    //   .then((response) => {
+    //     console.log('E-mail enviado', response.status, response.text)
+    //   }, (err) => { console('Erro: ', err) })
+  };
+  // const onSubmit = async (data) => {
+  //   const resend = await new Resend();
+
+  //   resend.emails.send({
+  //     from: 'onboarding@resend.dev',
+  //     to: 'brenda.lima@ufcspa.edu.br',
+  //     subject: 'Hello World',
+  //     html: '<p>Congrats on sending your <strong>first email</strong>!</p>'
+  //   })
+  // }
+
+>>>>>>> e131c102e1f028f636f8e4c65c48a87bf499f384
   const {
     handleSubmit,
     formState: { isSubmitting },
     // watch,
     // control,
   } = createMessageForm;
+<<<<<<< HEAD
   return (
     <>
       <Layout>
@@ -54,6 +87,18 @@ export function Home() {
 
               <img src='https://static.wixstatic.com/media/48eda6_71c4d245ff094ec7aeaeaca82b827744~mv2.png/v1/crop/x_0,y_420,w_1080,h_320/fill/w_799,h_237,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%20(3).png' className=" justify-center justify-self-center"></img>
 
+=======
+
+  return (
+    <>
+      <Layout>
+        <div className='gap-4'>
+          <div className="grid col-start-1 col-end-7 bg-fixed bg-no-repeat bg-background-initial bg-cover"
+          >
+            <div className="grid gap-10 content-center h-screen">
+
+              <img src='https://static.wixstatic.com/media/48eda6_71c4d245ff094ec7aeaeaca82b827744~mv2.png/v1/crop/x_0,y_420,w_1080,h_320/fill/w_799,h_237,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%20(3).png' className="justify-center justify-self-center"></img>
+>>>>>>> e131c102e1f028f636f8e4c65c48a87bf499f384
               <div className="place-items-end place-self-center grid grid-cols-2">
                 <p className="sm:w-64 md:w-auto">Tecnologias Emergentes nas<span> Grandes Áreas da Física Médica</span></p>
                 <p className="w-32">7, 8 e 9<span> de Nov.</span></p>
@@ -70,6 +115,7 @@ export function Home() {
                 <Course />
               </div>
             </div>
+<<<<<<< HEAD
 
             <div className="grid h-96 place-items-center ">
               <div className="md:w-3/5 sm:w-4/5 col-span-3 -ml-10 rounded-xl bg-slate-900 shadow-lg dark:shadow-none dark:ring-1 dark:ring-inset dark:ring-white/10 xl:ml-0 border-gray-600 border border-solid ">
@@ -92,12 +138,19 @@ export function Home() {
                 </div>
               </div>
             </div>
+=======
+            <Content />
+>>>>>>> e131c102e1f028f636f8e4c65c48a87bf499f384
           </div>
         </div>
         <div className="grid py-8 p-2 place-items-center bg-slate-900 h-max">
           <h1 className='dark:text-white text-cyan-950 text-4xl font-bold uppercase text-center'>Dúvidas?</h1>
           <FormProvider {...createMessageForm} >
+<<<<<<< HEAD
             <form onSubmit={handleSubmit(onSubmit)}>
+=======
+            <form id="Contato" onSubmit={handleSubmit(onSubmit)}>
+>>>>>>> e131c102e1f028f636f8e4c65c48a87bf499f384
               <div className="grid grid-cols-2 gap-4 w-max">
                 <div className='col-start-1 col-end-3'>
                   <TextField
@@ -149,6 +202,39 @@ export function Home() {
           </FormProvider>
         </div>
       </Layout>
+<<<<<<< HEAD
     </>
   )
+=======
+
+    </>
+  )
+}
+
+function Content() {
+
+  return <>
+    <div id="Programação" className="grid h-96 place-items-center ">
+      <div className="lg:w-2/6 md:w-3/5 sm:w-4/5 col-span-3 -ml-10 rounded-xl bg-slate-900 shadow-lg dark:shadow-none dark:ring-1 dark:ring-inset dark:ring-white/10 xl:ml-0 border-gray-600 border border-solid ">
+        <div className="static flex text-md leading-6 text-slate-400">
+          <div className="mt-2 flex flex-none items-center border-solid border-b border-t border-b-sky-300 border-t-transparent px-10 py-1 font-bold text-sky-300">Programação do evento</div>
+          <div className="flex flex-auto overflow-hidden rounded-tr-xl pt-3">
+            <div className="-mr-px py-6 flex-auto rounded-tl border border-solid border-slate-500/30 bg-slate-800/50"></div>
+          </div>
+        </div>
+        <div className="grid place-items-center">
+          <div className="flex items-center h-20 text-xl">
+            <svg viewBox="0 -9 3 24" aria-hidden="true" className="flex-none overflow-visible text-sky-700 w-auto h-10 mr-3"><path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+            <Link className="col-span-2 hover:text-sky-700 duration-300 px-2 cursor-pointer" to='/schedule/#07/11'>07/11</Link>
+            <svg viewBox="-20 -9 1 24" aria-hidden="true" className="flex-none overflow-visible text-sky-700 w-auto h-10 mr-3 px-10"><path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+            <Link className="col-span-2 hover:text-sky-700 duration-300 px-2 cursor-pointer" to='/schedule/#08/11'>08/11</Link>
+
+            <svg viewBox="-20 -9 1 24" aria-hidden="true" className="flex-none overflow-visible text-sky-700 w-auto h-10 mr-3 px-10"><path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+            <Link className="col-span-2 hover:text-sky-700 duration-300 px-2 cursor-pointer" to='/schedule/#09/11'>09/11</Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  </>
+>>>>>>> e131c102e1f028f636f8e4c65c48a87bf499f384
 }
