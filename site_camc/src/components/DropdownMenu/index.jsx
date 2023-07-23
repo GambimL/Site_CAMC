@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styles from '../DropdownMenu/Menu.module.scss';
 
 export function DropdownMenu() {
@@ -38,12 +38,12 @@ export function DropdownMenu() {
 
       <div className={`absolute overflow-hidden bg-white rounded-md shadow-xl dark:bg-slate-800 && ${styles.dropdownMenu} && ${open ? styles.active : styles.notActive}`} >
         {
-          days.map((program) => {
-            return <>
-              <a key={program} href={"#Programação"} className="block px-4 py-3 capitalize transition-colors duration-200 transform dark:text-gray-300 rounded-md  hover:text-sky-700 text-white">
+          days.map((program, i) => {
+            return <React.Fragment key={i}>
+              <a href={"#Programação"} className="block px-4 py-3 capitalize transition-colors duration-200 transform dark:text-gray-300 rounded-md  hover:text-sky-700 text-white">
                 dia {program.day}
               </a>
-            </>
+            </React.Fragment>
           })
         }
       </div>
