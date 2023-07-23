@@ -2,13 +2,12 @@ import logoFisMed from '../../assets/logoFisMed.png'
 import { Link } from '../Link'
 import { DropdownMenu } from '../DropdownMenu';
 
-const titles = ['Palestrantes', 'Opinião', 'Contato']
+const titles = ['Palestrantes', 'Opinião'   ]
 
 export function Header() {
     return <header
-        className="md:flex dark:bg-slate-900 bg-zinc-950 py-4 md:px-10 px-7 sm:h-28 lg:h-32
-            text-center border-b 
-            border-grey font-bold">
+        className="sticky top-0 z-30 flex dark:bg-slate-900 bg-zinc-950 py-4 md:px-10 px-7 lg:h-32 text-center border-b 
+        border-grey font-bold lg:w-full md:w-full w-[800px] ">
         <div
             className="container mx-auto flex h-30 
                 justify-start
@@ -27,5 +26,5 @@ export function Header() {
                 <Link titles={titles} />
             </div>
         </div>
-    </header >
+    </header>
 }

@@ -5,7 +5,7 @@ import { MdLocationOn } from 'react-icons/md'
 
 export function Modal({ closeModal, value }) {
   return <>
-    <div className="fixed inset-0 z-10 overflow-y-auto">
+    <div className="fixed inset-0 z-30 overflow-y-auto">
       <div
         className="blur fixed inset-0 w-full h-full bg-black bg-opacity-40 backdrop-blur-sm"
         onClick={() => closeModal(false)}

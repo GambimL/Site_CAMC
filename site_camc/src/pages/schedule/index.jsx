@@ -15,8 +15,7 @@ export const Schedule = () => {
         {/* <main className="flex space-x-4">
             <Link titles={["07/11", "08/11", "09/11"]} />
         </main> */}
-    </div >
-      </Layout >
-
+      </div >
+    </Layout >
   )
 }
