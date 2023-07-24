@@ -2,7 +2,7 @@ import logoFisMed from '../../assets/logoFisMed.png'
 import { Link } from '../Link'
 import { DropdownMenu } from '../DropdownMenu';
 
-const titles = ['Palestrantes', 'Opinião'   ]
+const titles = ['Palestrantes', 'Opinião']
 
 export function Header() {
     return <header
