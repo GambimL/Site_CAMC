@@ -1,32 +1,30 @@
 import { Layout } from "../../components/Layout";
-import { Palest } from "../../components/palestrantes";
-import { Link } from "../../components/Link";
+import { Speaker } from "../../components/Speaker";
 
+export function Speakers() {
 
-export function Palestrantes() {
-
-    return(
+    return (
         <>
             <Layout>
                 <div className="grid grid-cols-6 py-20">
                     <div className="col-start-2 col-span-4 rounded-md">
-                        <Palest />
+                        <Speaker />
                     </div>
                 </div>
                 <div className="grid grid-cols-6 py-20">
                     <div className="col-start-2 col-span-4">
-                        <Palest />
+                        <Speaker />
                     </div>
                 </div>
                 <div className="grid grid-cols-6 py-20">
                     <div className="col-start-2 col-span-4">
-                        <Palest />
+                        <Speaker />
                     </div>
                 </div>
-                
+
             </Layout>
-        </>   
-        
+        </>
+
     )
 
 }
