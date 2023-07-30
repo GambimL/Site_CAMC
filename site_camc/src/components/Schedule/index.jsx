@@ -46,7 +46,7 @@ export function Content() {
   const [openCollapse3, setOpenCollapse3] = useState(false);
 
   return <div className="grid gap-2">
-    <div id="Programação" className="grid h-96 place-items-center ">
+    <div id="programação" className="grid h-96 place-items-center ">
       <div className="w-[800px] col-span-3 -ml-10 rounded-xl bg-slate-900 shadow-lg dark:shadow-none dark:ring-1 dark:ring-inset dark:ring-white/10 xl:ml-0 border-gray-600 border border-solid ">
         <div className="static flex text-md leading-6 text-slate-400">
           <div className="mt-2 flex flex-none items-center border-solid border-b border-t border-b-sky-300 border-t-transparent px-10 py-1 font-bold text-sky-300">Programação do evento</div>
@@ -58,7 +58,7 @@ export function Content() {
           <div className="flex items-center h-20 text-xl">
             <MdKeyboardArrowRight className="text-sky-700 flex-none overflow-visible w-auto h-8 px-6" />
             <a
-              onClick={(() => { openCollapse1 ? setOpenCollapse1(false) : setOpenCollapse1(true);console.log(openCollapse1) })} className="col-span-2 hover:text-sky-700 duration-300 px-2 cursor-pointer" href='/home/#07/11'
+              onClick={(() => { openCollapse1 ? setOpenCollapse1(false) : setOpenCollapse1(true); console.log(openCollapse1) })} className="col-span-2 hover:text-sky-700 duration-300 px-2 cursor-pointer" href='/home/#07/11'
             >
               07/11
             </a>
