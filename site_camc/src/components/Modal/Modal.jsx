@@ -1,15 +1,14 @@
 import { descriptionsCourse } from "../../utils/Constants";
 import { BiCalendar } from 'react-icons/bi'
 import { FaRegClock } from 'react-icons/fa'
-import { MdLocationOn } from 'react-icons/md'
+import { MdLocationOn, MdOutlineClose } from 'react-icons/md'
 
 export function Modal({ closeModal, value }) {
   return <>
     <div className="fixed inset-0 z-30 overflow-y-auto">
       <div
         className="blur fixed inset-0 w-full h-full bg-black bg-opacity-40 backdrop-blur-sm"
-        onClick={() => closeModal(false)}
-      ></div>
+        onClick={() => closeModal(false)}></div>
       <div className="flex items-center min-h-screen px-4 py-8">
         <div className="relative w-11/12 p-4 mx-auto bg-slate-900 rounded-md shadow-sm border border-sky-800 border-solid shadow-sky-800">
           <div className="mt-3 sm:flex h-96">
@@ -25,18 +24,7 @@ export function Modal({ closeModal, value }) {
                     closeModal(false)
                   }
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="2"
-                    stroke="currentColor"
-                    className="h-6 w-6">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M6 18L18 6M6 6l12 12" />
-                  </svg>
+                  <MdOutlineClose size={25} />
                 </button>
               </div>
 
@@ -47,7 +35,8 @@ export function Modal({ closeModal, value }) {
               <div className="items-center place-content-center gap-2 mt-3 sm:flex md:p-7 space-y-3">
                 <div className="grid grid-cols-3 gap-5 font-bold text-md">
                   <div className="flex gap-5">
-                    <BiCalendar className="place-self-center" /><span>{descriptionsCourse[value].day}</span>
+                    <BiCalendar className="place-self-center" />
+                      <span>{descriptionsCourse[value].day}</span>
                   </div>
                   <div className="flex gap-5">
                     <FaRegClock className="place-self-center"
