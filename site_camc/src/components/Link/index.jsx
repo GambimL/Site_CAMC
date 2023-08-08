@@ -8,7 +8,6 @@ export function Link({ titles }) {
           {text === 'programação' ? <a href={"/home/#" + text}>{text}</a>
             : text}
         </a>
-      ))
-    }</>
+      ))}</>
   )
 }
