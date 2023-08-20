@@ -1,7 +1,6 @@
-import Error from '../../assets/error.png';
-import { Link } from 'react-router-dom';
-import { FaArrowLeft } from 'react-icons/fa'
-import { Button } from '../Button';
+import Error from "../../assets/error.png";
+import { Link } from "react-router-dom";
+import { Button } from "../Button";
 
 export function NotFound() {
 

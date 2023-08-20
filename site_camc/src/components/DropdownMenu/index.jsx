@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import styles from '../DropdownMenu/Menu.module.scss';
+import React, { useState, useEffect, useRef } from "react";
+import styles from "../DropdownMenu/Menu.module.scss";
 
 export function DropdownMenu() {
   const [open, setOpen] = useState(false);
@@ -19,10 +19,10 @@ export function DropdownMenu() {
       }
     };
 
-    document.addEventListener('mousedown', handler);
+    document.addEventListener("mousedown", handler);
 
     return () => {
-      document.removeEventListener('mousedown', handler);
+      document.removeEventListener("mousedown", handler);
     };
   });
 

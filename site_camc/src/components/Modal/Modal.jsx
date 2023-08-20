@@ -1,7 +1,7 @@
 import { descriptionsCourse } from "../../utils/Constants";
-import { BiCalendar } from 'react-icons/bi'
-import { FaRegClock } from 'react-icons/fa'
-import { MdLocationOn, MdOutlineClose } from 'react-icons/md'
+import { BiCalendar } from "react-icons/bi"
+import { FaRegClock } from "react-icons/fa"
+import { MdLocationOn, MdOutlineClose } from "react-icons/md"
 
 export function Modal({ closeModal, value }) {
   return <>

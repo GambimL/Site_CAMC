@@ -27,7 +27,7 @@ export const Schedule = ({ scheduleDescription, id }) => {
               <div className="flow-root bg-sky-900 text-center rounded-md w-[210px] justify-self-end border-2 border-solid border-sky-700 ">
                 <div className="h-36 w-56 grid grid-cols-3 content-center">
                   <MdLocationOn size={20} className="mx-6 my-3" />
-                  <span className='text-base font-bold text-right'>{value.location}</span>
+                  <span className="text-base font-bold text-right">{value.location}</span>
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@ export function Content() {
           <div className="flex items-center h-20 text-xl">
             <MdKeyboardArrowRight className="text-sky-700 flex-none overflow-visible w-auto h-8 px-6" />
             <a
-              onClick={(() => { openCollapse1 ? setOpenCollapse1(false) : setOpenCollapse1(true); console.log(openCollapse1) })} className="col-span-2 hover:text-sky-700 duration-300 px-2 cursor-pointer" href='/home/#07/11'
+              onClick={(() => { openCollapse1 ? setOpenCollapse1(false) : setOpenCollapse1(true); console.log(openCollapse1) })} className="col-span-2 hover:text-sky-700 duration-300 px-2 cursor-pointer" href="/home/#07/11"
             >
               07/11
             </a>
@@ -67,14 +67,14 @@ export function Content() {
             <a
               onClick={(() => { openCollapse2 ? setOpenCollapse2(false) : setOpenCollapse2(true) })}
               className="col-span-2 hover:text-sky-700 duration-300 px-2 cursor-pointer"
-              href='/home/#08/11'>
+              href="/home/#08/11">
               08/11
             </a>
             <MdKeyboardArrowRight className="flex-none overflow-visible text-sky-700 w-auto h-8 px-6" />
 
             <a
               onClick={(() => { openCollapse3 ? setOpenCollapse3(false) : setOpenCollapse3(true) })} className="col-span-2 hover:text-sky-700 duration-300 px-2 cursor-pointer"
-              href='/home/#09/11'>
+              href="/home/#09/11">
               09/11
             </a>
           </div>

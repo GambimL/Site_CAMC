@@ -10,7 +10,7 @@ export function Course() {
     <> {descriptionsCourse.map((course, i) => {
       return <React.Fragment key={i}>
         <div
-          className='space-x-4 font-light'
+          className="space-x-4 font-light"
           onClick={() => {
             setOpenModal(true)
             setValue(course.id)

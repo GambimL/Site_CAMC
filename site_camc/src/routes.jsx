@@ -1,7 +1,7 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
-import { Home } from './pages/home';
-import { Speakers } from './pages/speakers';
-import { NotFound } from './components/NotFound';
+import { Routes, Route, Navigate } from "react-router-dom"
+import { Home } from "./pages/home";
+import { Speakers } from "./pages/speakers";
+import { NotFound } from "./components/NotFound";
 
 export default function MainRoutes() {
   return (

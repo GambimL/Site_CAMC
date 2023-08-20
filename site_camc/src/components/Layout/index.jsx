@@ -1,5 +1,5 @@
-import { Header } from '../Header';
-import styles from './Layout.module.scss';
+import { Header } from "../Header";
+import styles from "./Layout.module.scss";
 
 export const Layout = ({ children }) => {
   return (

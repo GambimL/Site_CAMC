@@ -2,9 +2,6 @@
 
 export function HambuguerMenuIcon(props){
 
-
-
-
     return(
         <div>
             <div className="h-auto w-auto md:hidden cursor-pointer" onClick={props.clicked}>

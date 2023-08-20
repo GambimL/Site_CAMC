@@ -11,27 +11,27 @@ import { Button } from "../../components/Button";
 
 const createMessageFormSchema = z.object({
   name: z.string().nonempty({
-    message: 'O nome é obrigatório',
+    message: "O nome é obrigatório",
   }).transform(name => {
     return name
       .trim()
-      .split(' ')
+      .split(" ")
       .map(word => word[0].toLocaleUpperCase().concat(word.substring(1)))
-      .join(' ')
+      .join(" ")
   }),
   email: z.string().nonempty({
-    message: 'O e-mail é obrigatório',
+    message: "O e-mail é obrigatório",
   }).email({
-    message: 'Formato de e-mail inválido',
+    message: "Formato de e-mail inválido",
   }).toLowerCase(),
   course: z.string().nonempty({
-    message: 'O curso é obrigatório',
+    message: "O curso é obrigatório",
   }),
   phone: z.string().nonempty({
-    message: 'O telefone é obrigatório',
+    message: "O telefone é obrigatório",
   }),
   doubt: z.string().nonempty({
-    message: 'A dúvida é obrigatória',
+    message: "A dúvida é obrigatória",
   })
 })
 
@@ -50,17 +50,17 @@ export function Home() {
     //   phone: data.phone
     // }, import.meta.env.VITE_PUBLIC_KEY)
     //   .then((response) => {
-    //     console.log('E-mail enviado', response.status, response.text)
-    //   }, (err) => { console('Erro: ', err) })
+    //     console.log("E-mail enviado", response.status, response.text)
+    //   }, (err) => { console("Erro: ", err) })
   };
   // const onSubmit = async (data) => {
   //   const resend = await new Resend();
 
   //   resend.emails.send({
-  //     from: 'onboarding@resend.dev',
-  //     to: 'brenda.lima@ufcspa.edu.br',
-  //     subject: 'Hello World',
-  //     html: '<p>Congrats on sending your <strong>first email</strong>!</p>'
+  //     from: "onboarding@resend.dev",
+  //     to: "brenda.lima@ufcspa.edu.br",
+  //     subject: "Hello World",
+  //     html: "<p>Congrats on sending your <strong>first email</strong>!</p>"
   //   })
   // }
 
@@ -74,7 +74,7 @@ export function Home() {
   return (
     <Layout>
       <div className="gap-4">
-        <div className="grid col-start-1 col-end-7 bg-fixed bg-no-repeat bg-background-initial bg-cover"
+        <div className="grid col-start-1 col-end-7 bg-fixed h-[600px] bg-no-repeat bg-background-initial bg-cover"
         >
           <div className="grid gap-10 content-center h-screen">
 
