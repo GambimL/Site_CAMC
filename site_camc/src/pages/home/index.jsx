@@ -76,7 +76,7 @@ export function Home() {
       <div className="gap-4">
         <div className="grid col-start-1 col-end-7 bg-fixed h-[600px] bg-no-repeat bg-background-initial bg-cover"
         >
-          <div className="grid gap-10 content-center h-screen">
+          <div className="grid gap-10 content-center ">
 
             <img src="https://static.wixstatic.com/media/48eda6_71c4d245ff094ec7aeaeaca82b827744~mv2.png/v1/crop/x_0,y_420,w_1080,h_320/fill/w_799,h_237,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%20(3).png" className="justify-center justify-self-center"></img>
             <div className="place-items-end place-self-center grid grid-cols-2">

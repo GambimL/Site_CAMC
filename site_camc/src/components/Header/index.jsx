@@ -2,8 +2,10 @@ import logoFisMed from "../../assets/logoFisMed.png"
 import { Link } from "../Link"
 import { HamburguerMenu } from "../HamburguerMenu"
 import { useState } from "react"
+import { MenuButton } from "../MenuButton"
 
 const titles = ["programação", "palestrantes", "opinião"]
+const menuButtonText = "Se increva"
 
 export function Header() {
     const [visible, setVisible] = useState(false)
@@ -32,6 +34,7 @@ export function Header() {
 
             <div className="md:flex justify-center hidden">
                 <Link titles={titles} />
+                <MenuButton text={menuButtonText}/>
             </div>
             <HamburguerMenu titles={titles} visible={visible} />
         </div>
