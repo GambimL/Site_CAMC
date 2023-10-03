@@ -1,11 +1,11 @@
-import logoFisMed from "../../assets/logoFisMed.png"
+import logoFisMed from "../../assets/oldLogoFisMed.png"
 import { Link } from "../Link"
 import { HamburguerMenu } from "../HamburguerMenu"
 import { useState } from "react"
-import { MenuButton } from "../MenuButton"
+import { MenuButton } from "../Button";
 
 const titles = ["programação", "palestrantes", "opinião"]
-const menuButtonText = "Se increva"
+const menuButtonText = "Increva-se!"
 
 export function Header() {
     const [visible, setVisible] = useState(false)
@@ -19,8 +19,7 @@ export function Header() {
         <div
             className="container mx-auto flex h-30 
                 justify-between
-                md:justify-center
-                
+                md:justify-center                
                 items-center">
             <a href="/home">
                 <img

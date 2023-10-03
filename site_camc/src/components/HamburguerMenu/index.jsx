@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { TfiMenu } from "react-icons/tfi";
 import { MdOutlineClose } from "react-icons/md";
-import { MenuButton } from "../MenuButton";
+import { MenuButton } from "../Button";
 
 export function HamburguerMenu(props) {
 
@@ -17,7 +17,7 @@ export function HamburguerMenu(props) {
                         <MdOutlineClose size={25} />
                     </div>
                 </div>
-                <MenuButton text={"se inscreva"}/>
+                <MenuButton text={"Inscreva-se!"}/>
                 {props.titles.map((title) => (
                     <div className="m-6 border-b-4 py-3 w-1/3 hover:w-1/2 cursor-pointer rounded-sm duration-100 border-solid hover:border-sky-700 group border-white capitalize">
                         <a key={title} href={"/" + title}

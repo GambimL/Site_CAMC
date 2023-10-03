@@ -8,6 +8,7 @@ import { useForm, FormProvider } from "react-hook-form";
 // import emailjs from "@emailjs/browser";
 import { Content } from "../../components/Schedule";
 import { Button } from "../../components/Button";
+import background from "./../../assets/backgroundModel.png";
 
 const createMessageFormSchema = z.object({
   name: z.string().nonempty({
@@ -74,18 +75,7 @@ export function Home() {
   return (
     <Layout>
       <div className="gap-4">
-        <div className="grid col-start-1 col-end-7 bg-fixed h-[600px] bg-no-repeat bg-background-initial bg-cover"
-        >
-          <div className="grid gap-10 content-center ">
-
-            <img src="https://static.wixstatic.com/media/48eda6_71c4d245ff094ec7aeaeaca82b827744~mv2.png/v1/crop/x_0,y_420,w_1080,h_320/fill/w_799,h_237,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%20(3).png" className="justify-center justify-self-center"></img>
-            <div className="place-items-end place-self-center grid grid-cols-2">
-              <p className="sm:w-64 md:w-auto">Tecnologias Emergentes nas<span> Grandes Áreas da Física Médica</span></p>
-              <p className="w-32">7, 8 e 9<span> de Nov.</span></p>
-            </div>
-
-          </div>
-        </div>
+        <img src={background} className="justify-center justify-self-center" />
         <div className="bg-slate-800 col-start-2 col-span-4 space-y-10">
           <div className="grid pt-5 space-y-4 sm:h-max justify-center items-center gap-5 ">
             <h1 className="dark:text-white text-cyan-950 text-4xl font-bold uppercase text-center">
