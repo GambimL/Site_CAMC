@@ -7,10 +7,10 @@ export function Modal({ closeModal, value }) {
   return <>
     <div className="fixed inset-0 z-30 overflow-y-auto">
       <div
-        className="blur fixed inset-0 w-full h-full bg-black bg-opacity-40 backdrop-blur-sm"
+        className="blur fixed inset-0 w-full h-full bg-zinc-800 bg-opacity-40 backdrop-blur-sm"
         onClick={() => closeModal(false)}></div>
       <div className="flex items-center min-h-screen px-4 py-8">
-        <div className="relative w-11/12 p-4 mx-auto bg-slate-900 rounded-md shadow-sm border border-sky-800 border-solid shadow-sky-800">
+        <div className="relative w-11/12 p-4 mx-auto bg-zinc-800 rounded-md shadow-sm border border-black border-solid shadow-sky-[#511481]">
           <div className="mt-3 sm:flex h-96">
             <div className="mt-2 text-center sm:ml-4 sm:text-left">
               <div className="grid grid-cols-8 gap-4 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 dark:border-opacity-50">

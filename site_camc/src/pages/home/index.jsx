@@ -76,7 +76,7 @@ export function Home() {
     <Layout>
       <div className="gap-4">
         <img src={background} className="justify-center justify-self-center" />
-        <div className="bg-slate-800 col-start-2 col-span-4 space-y-10">
+        <div className="  bg-zinc-900 col-start-2 col-span-4 space-y-10">
           <div className="grid pt-5 space-y-4 sm:h-max justify-center items-center gap-5 ">
             <h1 className="dark:text-white text-cyan-950 text-4xl font-bold uppercase text-center">
               IX jornada de física médica

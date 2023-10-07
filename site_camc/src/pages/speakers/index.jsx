@@ -8,7 +8,7 @@ export function Speakers() {
 
     return (
         <Layout>
-            <div className="h-screen w-full">
+            <div className=" bg-zinc-900">
                 <Speaker description="Bacharel em Física pela Universidade Federal do Rio Grande do Sul (UFRGS). 
                             Supervisor de Proteção Radiológica certificado pela CNEN em instalação na área de medicina nuclear. 
                             Especialista em Física Médica - Medicina Nuclear pelo Hospital de Clínicas de Porto Alegre (HCPA). 

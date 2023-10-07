@@ -10,7 +10,7 @@ export const Schedule = ({ scheduleDescription, id }) => {
     <>
       {scheduleDescription.map((value, index) => {
         return <div key={index} className="hover:border-2 cursor-pointer">
-          <div className="w-[270px] col-span-3 rounded-md bg-slate-900 shadow-lg dark:shadow-none dark:ring-1 dark:ring-inset dark:ring-white/10 ml-0">
+          <div className="w-[270px] col-span-3 rounded-md bg-zinc-700 shadow-lg dark:shadow-none dark:ring-1 dark:ring-inset dark:ring-white/10 ml-0">
             <div className="static flex text-md leading-6 text-slate-400 border-solid border-b border-t border-sky-300 border-t-transparent">
               <div className="mt-2 flex flex-none text-lg items-center px-24 py-1 font-bold text-sky-300">
                 {value.time}
@@ -47,7 +47,7 @@ export function Content() {
 
   return <div className="grid gap-2">
     <div id="programação" className="grid h-96 place-items-center ">
-      <div className="w-[800px] col-span-3 -ml-10 rounded-xl bg-slate-900 shadow-lg dark:shadow-none dark:ring-1 dark:ring-inset dark:ring-white/10 xl:ml-0 border-gray-600 border border-solid ">
+      <div className="w-[800px] col-span-3 -ml-10 rounded-xl bg-zinc-700 shadow-lg dark:shadow-none dark:ring-1 dark:ring-inset dark:ring-zinc-800 xl:ml-0 border-gray-600 border border-solid ">
         <div className="static flex text-md leading-6 text-slate-400">
           <div className="mt-2 flex flex-none items-center border-solid border-b border-t border-b-sky-300 border-t-transparent px-10 py-1 font-bold text-sky-300">Programação do evento</div>
           <div className="flex flex-auto overflow-hidden rounded-tr-xl pt-3">
