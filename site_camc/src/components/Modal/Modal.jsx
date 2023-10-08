@@ -14,7 +14,7 @@ export function Modal({ closeModal, value }) {
           <div className="mt-3 sm:flex h-96">
             <div className="mt-2 text-center sm:ml-4 sm:text-left">
               <div className="grid grid-cols-8 gap-4 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 dark:border-opacity-50">
-                <h4 className="lg:text-2xl md:text-xl font-bold col-start-1 col-end-8 mb-2">
+                <h4 className="lg:text-2xl md:text-xl font-['Consolas'] font-bold col-start-1 col-end-8 mb-2">
                   {descriptionsCourse[value].title}
                 </h4>
                 <button
@@ -28,22 +28,22 @@ export function Modal({ closeModal, value }) {
                 </button>
               </div>
 
-              <span className="text-sky-800 font-bold">{descriptionsCourse[value].speaker}</span>
-              <p className="mt-3 lg:text-[18px] md:text-[15px] leading-relaxed text-justify">
+              <span className="text-[#8257e5] font-['Consolas'] font-bold">{descriptionsCourse[value].speaker}</span>
+              <p className="mt-3 lg:text-[18px] font-['Consolas'] md:text-[15px] leading-relaxed text-justify">
                 {descriptionsCourse[value].description}
               </p>
               <div className="items-center place-content-center gap-2 mt-3 sm:flex md:p-7 space-y-3">
                 <div className="grid grid-cols-3 gap-5 font-bold text-md">
                   <div className="flex gap-5">
                     <BiCalendar className="place-self-center" />
-                      <span>{descriptionsCourse[value].day}</span>
+                      <span className="font-['Consolas']">{descriptionsCourse[value].day}</span>
                   </div>
                   <div className="flex gap-5">
                     <FaRegClock className="place-self-center"
-                    /><span>{descriptionsCourse[value].time}</span>
+                    /><span className="font-['Consolas']">{descriptionsCourse[value].time}</span>
                   </div>
                   <div className="flex gap-5">
-                    <MdLocationOn className="place-self-center" /><span>{descriptionsCourse[value].location}</span>
+                    <MdLocationOn className="place-self-center" /><span className="font-['Consolas']">{descriptionsCourse[value].location}</span>
                   </div>
                 </div>
               </div>

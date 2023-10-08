@@ -78,7 +78,7 @@ export function Home() {
         <img src={background} className="justify-center justify-self-center" />
         <div className="  bg-zinc-900 col-start-2 col-span-4 space-y-10">
           <div className="grid pt-5 space-y-4 sm:h-max justify-center items-center gap-5 ">
-            <h1 className="dark:text-white text-cyan-950 text-4xl font-bold uppercase text-center">
+            <h1 className="dark:text-white text-cyan-950 text-4xl font-['Consolas'] font-bold uppercase text-center">
               IX jornada de física médica
             </h1>
             <div className="grid sm:grid-rows-2 md:grid-cols-2 gap-6">
@@ -88,7 +88,7 @@ export function Home() {
           <Content />
         </div>
       </div>
-      <div className="grid py-8 p-2 place-items-center bg-slate-900 h-max">
+      <div className="grid py-8 p-2 place-items-center bg-zinc-950 h-max">
         <h1 className="dark:text-white text-cyan-950 text-4xl font-bold uppercase text-center">Dúvidas?</h1>
         <FormProvider {...createMessageForm} >
           <form id="Contato" onSubmit={handleSubmit(onSubmit)}>
