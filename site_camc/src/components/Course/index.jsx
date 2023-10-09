@@ -16,10 +16,11 @@ export function Course() {
             setValue(course.id)
           }}
         >
-          <div className="sm:p-2 rounded-xl lg:w-96 lg:h-80 md:p-4 space-y-3 dark:bg-zinc-700 font-bold grid gap-5 text-justify p-5 cursor-pointer sm:text-xl hover:border-2 hover:border-[#8257e5] border-solid hover:border-y-0">
-            <h2 className="uppercase text-2xl font-['Consolas'] text-center">minicurso</h2>
-            <p className=" font-['Consolas'] leading-10">{course.title}</p>
-            <span className="font-['Consolas'] text-[#8257e5] dark:text-[#8257e5]">{course.speaker}</span>
+          <div className="sm:p-2 rounded-xl lg:w-96 lg:h-80 md:p-4 space-y-3 dark:bg-violet-200 font-bold grid gap-5 
+          text-justify p-5 cursor-pointer sm:text-xl hover:border-2 hover:border-violet-100 border-solid hover:border-y-0">
+            <h2 className="font-['Consolas'] uppercase text-2xl text-center">minicurso</h2>
+            <p className="leading-10 font-['Consolas']">{course.title}</p>
+            <span className="text-violet-100 font-['Consolas']">{course.speaker}</span>
           </div>
         </div>
       </React.Fragment>

@@ -14,6 +14,14 @@
 
   /* typography */
   --font-stack: "Montserrat", sans-serif;
+
+  --primary: #8257e5;
+  --primary-darker: #28203e;
+  --primary-hover: #9466ff;
+  --primary-border: #6833e4;
+  --primary-shape: #734bd1;
+  --primary-light: #996dff;
+  --background: #121214;
 }
 
 * {
@@ -31,7 +39,7 @@ html, body{
   color: var(--surface);
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
-  background-color: rgb(30 41 59);
+  background-color: var(--background);
 }
 
 a {
@@ -76,7 +84,7 @@ span{
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span
 {
-  color:rgb(3 105 161);
+  color:#7c41c9;
   transform: translateX(-1px) translateY(-62px);
   font-size: 0.65em;
   padding: 0 7px;

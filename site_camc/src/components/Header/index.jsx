@@ -14,8 +14,7 @@ export function Header() {
     }
 
     return <header
-        className="sticky top-0 z-30 flex  bg-zinc-950 py-4 lg:px-10 px-7 lg:h-32 text-center border-b border-solid
-        border-gray-600 font-bold  lg:w-full w-full md:w[800px]">
+        className="sticky top-0 z-30 flex bg-zinc-900 py-4 lg:px-10 px-7 lg:h-32 text-center font-bold lg:w-full w-full md:w[800px]">
         <div
             className="container mx-auto flex h-30 
                 justify-between

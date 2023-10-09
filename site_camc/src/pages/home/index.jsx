@@ -7,7 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, FormProvider } from "react-hook-form";
 // import emailjs from "@emailjs/browser";
 import { Content } from "../../components/Schedule";
-import { Button } from "../../components/Button";
+import { MenuButton } from "../../components/Button";
 import background from "./../../assets/backgroundModel.png";
 
 const createMessageFormSchema = z.object({
@@ -76,9 +76,9 @@ export function Home() {
     <Layout>
       <div className="gap-4">
         <img src={background} className="justify-center justify-self-center" />
-        <div className="  bg-zinc-900 col-start-2 col-span-4 space-y-10">
+        <div className="col-start-2 col-span-4 space-y-10">
           <div className="grid pt-5 space-y-4 sm:h-max justify-center items-center gap-5 ">
-            <h1 className="dark:text-white text-cyan-950 text-4xl font-['Consolas'] font-bold uppercase text-center">
+            <h1 className="dark:text-white font-['Consolas'] text-violet-100 text-4xl font-bold uppercase text-center">
               IX jornada de física médica
             </h1>
             <div className="grid sm:grid-rows-2 md:grid-cols-2 gap-6">
@@ -88,8 +88,8 @@ export function Home() {
           <Content />
         </div>
       </div>
-      <div className="grid py-8 p-2 place-items-center bg-zinc-950 h-max">
-        <h1 className="dark:text-white text-cyan-950 text-4xl font-bold uppercase text-center">Dúvidas?</h1>
+      <div className="grid py-8 p-2 place-items-center bg-violet-200 h-max">
+        <h1 className="font-['Consolas'] dark:text-white text-violet-150 text-4xl font-bold uppercase text-center">Dúvidas?</h1>
         <FormProvider {...createMessageForm} >
           <form id="Contato" onSubmit={handleSubmit(onSubmit)}>
             <div className="grid grid-cols-2 gap-4 w-max">
@@ -102,7 +102,7 @@ export function Home() {
                 />
                 <TextField
                   name="email"
-                  label="E-mail"
+                  label="email"
                   type="email"
                   id="email"
                 />
@@ -131,7 +131,7 @@ export function Home() {
                 />
               </div>
               <div className="col-start-1 col-end-7 grid place-content-center">
-                <Button
+                <MenuButton
                   type="submit"
                   disabled={isSubmitting}
                   // className="bg-sky-700 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded" 

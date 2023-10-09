@@ -7,10 +7,10 @@ export function Modal({ closeModal, value }) {
   return <>
     <div className="fixed inset-0 z-30 overflow-y-auto">
       <div
-        className="blur fixed inset-0 w-full h-full bg-zinc-800 bg-opacity-40 backdrop-blur-sm"
+        className="blur fixed inset-0 w-full h-full bg-[#391a8f] bg-opacity-40 backdrop-blur-sm"
         onClick={() => closeModal(false)}></div>
       <div className="flex items-center min-h-screen px-4 py-8">
-        <div className="relative w-11/12 p-4 mx-auto bg-zinc-800 rounded-md shadow-sm border border-black border-solid shadow-sky-[#511481]">
+        <div className="relative w-11/12 p-4 mx-auto bg-violet-200 rounded-md shadow-sm border border-black border-solid shadow-sky-[#511481]">
           <div className="mt-3 sm:flex h-96">
             <div className="mt-2 text-center sm:ml-4 sm:text-left">
               <div className="grid grid-cols-8 gap-4 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 dark:border-opacity-50">
@@ -28,8 +28,8 @@ export function Modal({ closeModal, value }) {
                 </button>
               </div>
 
-              <span className="text-[#8257e5] font-['Consolas'] font-bold">{descriptionsCourse[value].speaker}</span>
-              <p className="mt-3 lg:text-[18px] font-['Consolas'] md:text-[15px] leading-relaxed text-justify">
+              <span className="font-['Consolas'] text-violet-100 font-bold">{descriptionsCourse[value].speaker}</span>
+              <p className="font-['Consolas'] mt-3 lg:text-[18px] md:text-[15px] leading-relaxed text-justify">
                 {descriptionsCourse[value].description}
               </p>
               <div className="items-center place-content-center gap-2 mt-3 sm:flex md:p-7 space-y-3">
