@@ -1,3 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* colors */
+  --surface: #ffffff;
+  
+  --grey-900: #121214;
+  --blue-50: #C0DFF8;
+  --blue-500: #324158;
+
+  /* typography */
+  --font-stack: "Montserrat", sans-serif;
+
+  --primary: #8257e5;
+  --primary-darker: #28203e;
+  --primary-hover: #9466ff;
+  --primary-border: #6833e4;
+  --primary-shape: #734bd1;
+  --primary-light: #996dff;
+  --background: #121214;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  list-style: none;
+  border: 0;
+  box-sizing: border-box;
+  font-family: var(--font-stack);
+
+}
+
+html, body{
+  color: var(--surface);
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background);
+}
+
+a {
+  text-decoration: none;
+  /* color: var(--blue-50) */
+}
+
+p {
+  font-size: 25px;
+}
+span{
+  display: block;
+  
+}
+
+/* header {
+  background-color: var(--grey-900)
+} */
+.inputBox {
+  position: relative;
+  width: 250px;
+  font-weight: bold;
+}
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  transition: 0.5s;
+
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  font-size: 1rem;
+  padding: 10px;
+  pointer-events: none;
+  text-transform: capitalize;
+  transition: 0.5s;
+  transform: translateX(1px) translateY(-45px);
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+  color:#7c41c9;
+  transform: translateX(-1px) translateY(-62px);
+  font-size: 0.65em;
+  padding: 0 7px;
+  letter-spacing: 0.2em;
+  /* transform: translateX(5px) translateY(-50px); */
+  /* background: rgb(15 23 42);  */
+   /* border-left: 1px solid rgb(3 105 161);
+  border-right: 1px solid rgb(3 105 161); */
+}
+
+.inputBox:nth-child(2) input:valid ~ span,
+.inputBox:nth-child(2) input:focus ~ span
+{
+  background: rgb(3 105 161);
+  border-radius: 2px;
+}
