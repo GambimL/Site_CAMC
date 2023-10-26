@@ -1,3 +1,5 @@
+
+
 export const descriptionsCourse = [
   {
     id: 0,
@@ -193,4 +195,15 @@ export const scheduleDescriptions09 = [
     location: "Auditório Prédio 2",
     time: "18h30",
   }
+]
+
+export const descriptionSpeakers = [
+  {
+    id: 0, 
+    description: "Mestranda no Programa de Pós-Graduação em Tecnologias da Informação e Gestão em Saúde da Universidade Federal de Ciências da Saúde de Porto Alegre (UFCSPA), com área de concentração em Tecnologias da Informação Inteligente, e graduada em Física Médica pela mesma instituição. Atualmente, trabalha como Técnica em Infraestrutura Cloud na Atos Brasil, líder global em serviços de tecnologia",
+    avatar: '../src/assets/samara.jpeg', 
+    nameSpeaker: 'Samara Prass dos Santos', 
+    lattes: 'Lattes: http://lattes.cnpq.br/9679712535577946', 
+  }
+
 ]
