@@ -1,4 +1,4 @@
-import logoFisMed from "../../assets/logo_fismed.png"
+import logoFisMed from "../../assets/logofismed.png"
 import { Link } from "../Link"
 import { HamburguerMenu } from "../HamburguerMenu"
 import { useState } from "react"
@@ -23,7 +23,7 @@ export function Header() {
             <a href="/home">
                 <img
                     src={logoFisMed}
-                    className="justify-start scale-150 
+                    className="justify-start scale-100 
                     lg:h-28 lg:w-30 
                     h-28 w-30 
                      pr-6"
