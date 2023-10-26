@@ -9,37 +9,11 @@ export const descriptionsCourse = [
     day: "16 Nov.",
     location: "Prédio 3 - Sala 215",
     time: "10h",
-    capacity: ""
+    capacity: "10", 
+    goal: "Abordagem de conceitos teóricos e práticos de como realizar um cálculo de blindagem em radiodiagnóstico médico e odontológico. Falaremos sobre normas, legislações e softwares que abordam cálculo de blindagem em radiodiagnóstico", 
+    link: "https:alguma coisa"
   },
-  {
-    id: 1,
-    title: "O que fazer após a graduação? Empreender!",
-    speaker: "Irradiation - Empresa Júnior de Física Médica",
-    description: "O curso irá abordar de maneira objetiva os serviços prestados pelo físico médico na área do empreendedorismo, a fim de apresentar melhor aos participantes como funciona a carta de serviços de uma empresa. Além disso, de forma prática, uma problemática será trazida aos alunos para que seja desenvolvida junto à equipe, com o objetivo de simular um problema real e fazer com que o inscrito saia apto a estruturar um projeto que chegue até ele. Os alunos contarão com acessos a computadores e interação simultânea com a equipe Irradiation.",
-    day: "17 Nov.",
-    location: "Prédio 2 - Sala 715",
-    time: "10h",
-    capacity: "20 vagas"
-  },
-  {
-    id: 2,
-    title: "Radioterapia Hands On: Planejamento de casos ao vivo no sistema Varian Eclipse™",
-    speaker: "William Trinca",
-    description: "O minicurso, em parceria com a Varian - empresa de tecnologias para o tratamento de câncer, abordará, de forma prática, como é feito o Planejamento Radioterápico, que é a simulação de quais passos serão seguidos na realização do tratamento no paciente, da forma mais precisa possível.",
-    day: "18 Nov.",
-    location: "Prédio 3 - Sala 215",
-    time: "10h"
-  },
-  {
-    id: 3,
-    title: "Inteligência Artificial em linguagem Python com aplicação em imagens médicas",
-    speaker: "Bruno Yukio Takara",
-    description: "O minicurso tem por objetivo aprimorar os conhecimentos sobre inteligência artificial para a classificação de imagens médicas utilizando linguagem Python, através do contato com o estado da arte das técnicas utilizadas para o processamento de imagens visando a identificação de regiões anatômicas relevantes em imagens de radiografia de tórax. As técnicas apresentadas no minicurso possuem importância para qualquer aplicação de inteligência artificial, não se limitando apenas ao estudo de radiografias torácicas, e podem servir como base para outros estudos em visão computacional.Pré-requisito: Possuir conhecimento básico em alguma linguagem de programação.",
-    day: "17 Nov.",
-    location: "Prédio 1 - Sala 405",
-    time: "8h",
-    capacity: "20 vagas"
-  }
+
 ]
 
 export const scheduleDescriptions07 = [
