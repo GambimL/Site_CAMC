@@ -175,7 +175,7 @@ export const descriptionSpeakers = [
   {
     id: 0, 
     description: "Bacharela em Física, linha de formação em Física Médica, pela PUCRS. Possui MBA em Auditoria em Saúde pelo Instituto de Administração Hospitalar e Ciências da Saúde e Especialização em Ciências Radiológicas e Imaginologia pela UCS e em Física Médica do Radiodiagnóstico pelo Programa de Residência em Área Profissional de Física Médica do HCPA. Atualmente, é mestranda do PPGCM da UFRGS. ",
-    avatar: '../src/assets/samara.jpeg', 
+    avatar: '../src/assets/iana.jpeg',
     nameSpeaker: 'Iana Quintanilha de Borba', 
     lattes: 'Lattes: http://lattes.cnpq.br/3456414924685148', 
   },
@@ -189,14 +189,14 @@ export const descriptionSpeakers = [
   {
     id: 2, 
     description: "Graduada em Física pela UFRGS e em Engenharia de Operações Eletrônicas pela PUCRS. Especialista em Gestão da Vigilância Sanitária. Atualmente, é funcionária pública ocupando o cargo de Especialista em Saúde com a função de Físico do Setor de Radiações do Centro Estadual de Vigilância em Saúde/SES/RS, com ênfase em Física Médica.",
-    avatar: '../src/assets/samara.jpeg', 
+    avatar: '../src/assets/jannete.jpeg', 
     nameSpeaker: 'Jeannette Rosangela Urtassum', 
     lattes: 'Lattes: http://lattes.cnpq.br/1340150737262164', 
   },
   {
     id: 3, 
     description: "Graduado em Física pela PUCRS e Especialista em Docência no Ensino Superior. Atualmente, é mestrando em Ensino na Saúde, é sócio e físico da Prophy Proteção Radiológica e Física Médica LTDA e professor na Universitário Escola Técnica, atuando principalmente em temas atrelados: à física, à física médica, ao controle de qualidade, à proteção radiológica em mamografia e à medicina nuclear.",
-    avatar: '../src/assets/samara.jpeg', 
+    avatar: '../src/assets/alexandre.jpeg', 
     nameSpeaker: 'Alexandre Albuquerque Ferret', 
     lattes: 'Lattes:  http://lattes.cnpq.br/3168400992448028', 
   }
