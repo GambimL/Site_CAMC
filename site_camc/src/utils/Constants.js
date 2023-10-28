@@ -15,7 +15,7 @@ export const descriptionsCourse = [
   },
   {
     id: 1,
-    title: "“Detecção e Classificação de Tumores Cerebrais utilizando imagens de Ressonância Magnética e Deep Learning",
+    title: "Detecção e Classificação de Tumores Cerebrais utilizando imagens de Ressonância Magnética e Deep Learning",
     speaker: "Samara Prass dos Santos",
     description: "Os tumores cerebrais e outros tumores primários do Sistema Nervoso Central (SNC) constituem um grupo heterogêneo de tumores, os quais apresentam diferentes sinais e sintomas, além de contar com um prognóstico variável. De acordo com a Estimativa de Incidência de Câncer no Brasil 2023, o número previsto de novos casos de câncer do SNC é de 11.490 a cada ano do triênio de 2023 a 2025. Dessa forma, se torna atrativa e relevante a aplicação de técnicas de classificação automatizada por meio de Machine Learning e Inteligência Artificial como suporte para o diagnóstico clínico. Dentro deste contexto, através de uma abordagem teórica e prática, este minicurso irá propor a criação de um modelo de deep learning capaz de detectar e classificar tumores cerebrais através de imagens de ressonância magnética de um conjunto de dados disponibilizado de maneira gratuita online. Os alunos contarão com acesso a computadores para realizarem de forma interativa e simultânea a parte prática. ",
     day: "08 Nov.",
