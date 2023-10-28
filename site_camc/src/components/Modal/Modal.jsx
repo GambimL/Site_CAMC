@@ -52,7 +52,7 @@ export function Modal({ closeModal, value }) {
                     <MdLocationOn className="place-self-center" /><span className="font-['Consolas']">{descriptionsCourse[value].location}</span>
                   </div>
                   <div className="flex gap-5">
-                    <BiBody className="place-self-center" /><span className="font-['Consolas']">{descriptionsCourse[value].capacity}</span>
+                    <BiBody className="place-self-center" /><span className="font-['Consolas'] mt-3">{descriptionsCourse[value].capacity}</span>
                   </div>
                   <div className="flex gap-5">
                     <BiArrowFromBottom className="place-self-center" /><a href={descriptionsCourse[value].link} className="font-['Consolas'] text-violet-100 rounded-md p-3 bg-white ">Incresva-se</a>

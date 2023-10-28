@@ -31,7 +31,6 @@ export function Header() {
                 </img>
             </a>
             {/* <DropdownMenu /> */}
-
             <div className="md:flex justify-center hidden">
                 <Link titles={titles} />
                 <MenuButton text={menuButtonText}/>

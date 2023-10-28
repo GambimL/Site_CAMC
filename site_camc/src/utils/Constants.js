@@ -13,6 +13,18 @@ export const descriptionsCourse = [
     goal: "Abordagem de conceitos teóricos e práticos de como realizar um cálculo de blindagem em radiodiagnóstico médico e odontológico. Falaremos sobre normas, legislações e softwares que abordam cálculo de blindagem em radiodiagnóstico", 
     link: "https:alguma coisa"
   },
+  {
+    id: 1,
+    title: "Determinação da unidade monitora em planejamento radioterápico",
+    speaker: "Carolina M. Isabela L. e Matheus F.",
+    description: "Unidades monitoras são as quantidades de radiação integrada registrada no equipamento presente na radioterapia. Com o tratamento de planejamentos 3D é possível realizar diversas combinações , onde podem ser determinados órgãos de risco com imagens radiodiagnosticas, criação de múltiplos campos de radiação, estimar quantidades de dose em múltiplos pontos e a quantidade de unidades monitoras (U.M.) necessárias para administrar a fração de radiação aplicada no tecido.  Mesmo com a obtenção de U.M. a partir dos Sistemas de Planejamento de Tratamento (TPS), precisa-se garantir a qualidade do tratamento referente a entrega da dose de radiação preconizada, tornando necessário a verificação dos valores determinados da unidade monitora com um outro método independente daquele oferecido pelo sistema de planejamento em análise, com a finalidade de analisar o desvio entre eles.",
+    day: "16 Nov.",
+    location: "Prédio 3 - Sala 215",
+    time: "10h",
+    capacity: "10", 
+    goal: "Abordagem de conceitos teóricos e práticos de como realizar um cálculo de blindagem em radiodiagnóstico médico e odontológico. Falaremos sobre normas, legislações e softwares que abordam cálculo de blindagem em radiodiagnóstico", 
+    link: "https:alguma coisa"
+  },
 
 ]
 
