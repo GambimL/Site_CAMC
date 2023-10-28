@@ -3,13 +3,13 @@
 export const descriptionsCourse = [
   {
     id: 0,
-    title: "”Cálculo de Blindagem em Radiodiagnóstico: Teoria e Prática",
-    speaker: ": Iana Quintanilha de Borba",
-    description: " Para o caso de instalações que utilizam equipamentos de radiologia emissores de radiações eletromagnéticas ionizantes ou não ionizantes para fins diagnósticos ou intervencionistas, deve ser apresentado o projeto de blindagem elaborado e assinado por profissional legalmente habilitado, aprovado e assinado pelo responsável legal. A modificação de qualquer parâmetro utilizado para os projetos de blindagem do serviço deve ser informada à autoridade sanitária competente antes da sua efetivação. As salas de exames devem possuir barreiras físicas com blindagem suficiente para garantir a manutenção de níveis de dose tão baixos quanto razoavelmente exequíveis, não ultrapassando os níveis de restrição de dose. ",
+    title: "Cálculo de Blindagem em Radiodiagnóstico: Teoria e Prática",
+    speaker: "Iana Quintanilha de Borba",
+    description: "Para o caso de instalações que utilizam equipamentos de radiologia emissores de radiações eletromagnéticas ionizantes ou não ionizantes para fins diagnósticos ou intervencionistas, deve ser apresentado o projeto de blindagem elaborado e assinado por profissional legalmente habilitado, aprovado e assinado pelo responsável legal. A modificação de qualquer parâmetro utilizado para os projetos de blindagem do serviço deve ser informada à autoridade sanitária competente antes da sua efetivação. As salas de exames devem possuir barreiras físicas com blindagem suficiente para garantir a manutenção de níveis de dose tão baixos quanto razoavelmente exequíveis, não ultrapassando os níveis de restrição de dose. ",
     day: "07 Nov.",
     location: "Prédio 2: sala 208 - Teatro Moacyr Scliar",
     time: " 10h-12h ",
-    capacity: "Sem limites", 
+    capacity: "∞", 
     goal: "Abordagem de conceitos teóricos e práticos de como realizar um cálculo de blindagem em radiodiagnóstico médico e odontológico. Falaremos sobre normas, legislações e softwares que abordam cálculo de blindagem em radiodiagnóstico.", 
     link: "https:alguma coisa"
   },
@@ -31,15 +31,15 @@ export const descriptionsCourse = [
     speaker: "Jeannette Rosangela Urtassum",
     description: "O físico médico desempenha um papel fundamental na vigilância sanitária ao garantir a segurança e a qualidade dos procedimentos que envolvem radiação ionizante, tais como exames de diagnóstico por imagem e radioterapia. A função do profissional consiste, dentre outras coisas, na certificação de que os equipamentos e protocolos estejam em conformidade com as regulamentações sanitárias, assegurando que os pacientes, profissionais de saúde e o público em geral estejam submetidos a níveis de radiação preconizados em normas e regulamentos.",
     day: "09 Nov.",
-    location: ": Prédio 2: sala 208 - Teatro Moacyr Scliar.",
+    location: "Prédio 2: sala 208 - Teatro Moacyr Scliar.",
     time: "10h-12h.",
-    capacity: "Sem limites", 
+    capacity: "∞", 
     goal: "O minicurso tem a finalidade de expor exemplos práticos das atividades e responsabilidades do físico médico no contexto da Vigilância Sanitária. Para isso, será feita apresentação e exibições de imagens com situações vivenciadas pela profissional.", 
     link: "https:alguma coisa"
   },
   {
     id: 3,
-    title: "“Radioproteção Aplicada à Medicina Nuclear - 2ª edição",
+    title: "Radioproteção Aplicada à Medicina Nuclear - 2ª edição",
     speaker: "Alexandre Albuquerque Ferret",
     description: "O curso irá abordar os princípios de radioproteção utilizados no dia a dia do Físico Médico na Medicina Nuclear. Será demonstrado como fazer a descontaminação de ambiente contaminado por um radiofármaco, bem como haverá visita à sala de controle de equipamentos como, por exemplo, PET e SPECT, na qual serão apresentados os princípios e partes instrumentais associadas ao funcionamento destes. ",
     day: "11 Nov.",
@@ -55,9 +55,9 @@ export const descriptionsCourse = [
 export const scheduleDescriptions07 = [
   {
     id: 0,
-    title: "Minicurso: Determinação da unidade monitora em planejamento radioterápico",
-    speaker: "Carolina M. Isabela L. e Matheus F.",
-    location: "Prédio 3 Sala 215",
+    title: "Minicurso: Cálculo de Blindagem em Radiodiagnóstico: Teoria e Prática",
+    speaker: "Iana Quintanilha de Borba",
+    location: "Prédio 2: sala 208 - Teatro Moacyr Scliar",
     time: "10h - 12h",
   },
   {
@@ -111,10 +111,10 @@ export const scheduleDescriptions07 = [
 export const scheduleDescriptions08 = [
   {
     id: 0,
-    title: "Minicurso: Inteligência Artificial em linguagem Python com aplicação em imagens médicas",
-    speaker: "Bruno Takara",
-    location: "Prédio 1 Sala 405",
-    time: "8h - 10h",
+    title: "Minicurso: Detecção e Classificação de Tumores Cerebrais utilizando imagens de Ressonância Magnética e Deep Learning",
+    speaker: "Samara Prass dos Santos",
+    location: "Prédio 1: sala 405 - Lab. Informática II",
+    time: "10h30-12h30",
   },
   {
     id: 1,
@@ -161,9 +161,9 @@ export const scheduleDescriptions08 = [
 export const scheduleDescriptions09 = [
   {
     id: 0,
-    title: "Minicurso: Radioterapia Hands On: Planejamento ao vivo de caso",
-    speaker: "William Trinca",
-    location: "Prédio 3 Sala 215",
+    title: "Minicurso: Papel do Físico Médico na Vigilância Sanitária: Aspectos Gerais",
+    speaker: "Jeannette Rosangela Urtassum",
+    location: "Prédio 2: sala 208 - Teatro Moacyr Scliar",
     time: "10h - 12h",
   },
   {
