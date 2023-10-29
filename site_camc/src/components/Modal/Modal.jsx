@@ -102,7 +102,7 @@ export function Alert({ closeModal }){
             <div className="grid place-items-center">
 
               <p className="font-['Consolas'] w-10/12 mt-3 lg:text-[18px] md:text-[15px] leading-relaxed text-justify">
-              Solicitamos aos alunos que participaram da edição anterior deste minicurso, na Jornada Acadêmica de 2022, que evitem se inscrever novamente a fim de permitir que os graduandos que ainda não tiveram a oportunidade de participar possam fazê-lo.
+              Solicitamos aos alunos que participaram da edição anterior do miniciurso "Radioproteção aplicada à Medicina Nuclear", na Jornada Acadêmica de 2022, que evitem se inscrever novamente a fim de permitir que os graduandos que ainda não tiveram a oportunidade de participar possam fazê-lo.
               </p>
             </div>
             
