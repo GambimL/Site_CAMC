@@ -9,7 +9,7 @@ export const descriptionsCourse = [
     day: "07 Nov.",
     location: "Prédio 2 - Teatro Moacyr Scliar",
     time: " 10h-12h ",
-    capacity: "∞", 
+    capacity: "Infinita.", 
     goal: "Abordagem de conceitos teóricos e práticos de como realizar um cálculo de blindagem em radiodiagnóstico médico e odontológico. Falaremos sobre normas, legislações e softwares que abordam cálculo de blindagem em radiodiagnóstico.", 
     link: "https:alguma coisa"
   },
@@ -19,9 +19,9 @@ export const descriptionsCourse = [
     speaker: "Samara Prass dos Santos",
     description: "Os tumores cerebrais e outros tumores primários do Sistema Nervoso Central (SNC) constituem um grupo heterogêneo de tumores, os quais apresentam diferentes sinais e sintomas, além de contar com um prognóstico variável. De acordo com a Estimativa de Incidência de Câncer no Brasil 2023, o número previsto de novos casos de câncer do SNC é de 11.490 a cada ano do triênio de 2023 a 2025. Dessa forma, se torna atrativa e relevante a aplicação de técnicas de classificação automatizada por meio de Machine Learning e Inteligência Artificial como suporte para o diagnóstico clínico. Dentro deste contexto, através de uma abordagem teórica e prática, este minicurso irá propor a criação de um modelo de deep learning capaz de detectar e classificar tumores cerebrais através de imagens de ressonância magnética de um conjunto de dados disponibilizado de maneira gratuita online. Os alunos contarão com acesso a computadores para realizarem de forma interativa e simultânea a parte prática. ",
     day: "08 Nov.",
-    location: ": Prédio 1: sala 405 - Lab. Informática II.",
+    location: "Prédio 1: sala 405 - Lab. Informática II.",
     time: "10h30-12h30",
-    capacity: "20", 
+    capacity: "20.", 
     goal: "O minicurso tem como objetivo principal capacitar os estudantes na detecção de diferentes tipos de tumores cerebrais a partir do modelo de deep learning. Para isso, os alunos irão usar o recurso do Google Colab.", 
     link: "https:alguma coisa"
   },
@@ -33,7 +33,7 @@ export const descriptionsCourse = [
     day: "09 Nov.",
     location: "Prédio 2 - Teatro Moacyr Scliar",
     time: "10h-12h.",
-    capacity: "∞", 
+    capacity: "Infinita.", 
     goal: "O minicurso tem a finalidade de expor exemplos práticos das atividades e responsabilidades do físico médico no contexto da Vigilância Sanitária. Para isso, será feita apresentação e exibições de imagens com situações vivenciadas pela profissional.", 
     link: "https:alguma coisa"
   },
@@ -45,7 +45,7 @@ export const descriptionsCourse = [
     day: "11 Nov.",
     location: "Santa Casa da Misericórdia de Porto Alegre - Setor de Medicina Nuclear do Hospital Santa Rita",
     time: "8h-10h (turma 1) e 10h-12h (turma 2)",
-    capacity: "7 por turma", 
+    capacity: "7 por turma.", 
     goal: "Esta atividade tem como objetivo principal mostrar aos alunos, de maneira prática, o cotidiano de um profissional da Física Médica na Medicina Nuclear. Além disso, que os discentes compreendam os procedimentos realizados de acordo com os princípios da radioproteção e executem alguns desses procedimentos junto ao profissional que irá ministrar o minicurso.", 
     link: "https:alguma coisa"
   },
