@@ -12,7 +12,7 @@ export function Button({ text }) {
 
 export function MenuButton(props){
   return(
-    <a href="#" className="drop-shadow-sm hover:shadow-none duration-200 h-12 w-32 flex justify-center 
+    <a href={!(props.link) ? "#" : props.link} className="drop-shadow-sm hover:shadow-none duration-200 h-12 w-32 flex justify-center 
       items-center shadow-md shadow-black text-lg font-['Consolas'] bg-violet-150 rounded-md hover:translate-y-1 font-bold border-white"
     >
       {props.text}
