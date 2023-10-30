@@ -1,9 +1,9 @@
 import styles from "./styles.module.scss";
 
-export function Button({ text }) {
+export function Button({ text, className }) {
   return (
     <div>
-      <button className={styles.btn}>
+      <button className={!className ? styles.btn : className}>
         {text}
       </button>
     </div>

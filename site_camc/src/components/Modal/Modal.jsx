@@ -4,7 +4,7 @@ import { FaRegClock } from "react-icons/fa"
 import { MdLocationOn, MdOutlineClose } from "react-icons/md"
 import { BiBody } from "react-icons/bi";
 import { BiArrowFromBottom } from "react-icons/bi";
-import { MenuButton } from '../Button/';
+import { Button } from '../Button/';
 
 export function Modal({ closeModal, value }) {
   return <>
@@ -34,15 +34,15 @@ export function Modal({ closeModal, value }) {
               </div>
 
               <span className="font-['Consolas'] text-violet-100 font-bold">{descriptionsCourse[value].speaker}</span>
-              <p className="font-['Consolas'] w-11/12 mt-3 lg:text-[18px] md:text-[15px] leading-relaxed text-justify">
+              <p className="font-['Consolas'] w-11/12 mt-3 lg:text-base md:text-[15px] sm:text-[13px] leading-relaxed text-justify">
                 {descriptionsCourse[value].description} <b className="md:text-[15px] text-violet-50">Capacidade de pessoas: {descriptionsCourse[value].capacity}</b>
               </p>
               <h2 className="lg:text-2xl md:text-xl font-['Consolas'] font-bold col-start-1 col-end-8 mt-2">
                   OBJETIVO
               </h2>
-              <p className="font-['Consolas'] w-11/12 mt-3 lg:text-[18px] md:text-[15px] leading-relaxed text-justify">{descriptionsCourse[value].goal}</p>
+              <p className="font-['Consolas'] w-11/12 mt-3 lg:text-base sm:text-[13px] md:text-[15px] leading-relaxed text-justify">{descriptionsCourse[value].goal}</p>
               <div className="items-center place-content-center mt-3 sm:flex md:p-7 space-y-3">
-                <div className="grid grid-cols-4 gap-5 place-items-center font-bold text-md">
+                <div className="grid grid-cols-4 md:text-md lg:text-base sm:text-[13px] gap-5 place-items-center font-bold text-md">
                   <div className="flex">
                     <BiCalendar className="w-24 place-self-center" />
                       <span className="place-self-center font-['Consolas']">{descriptionsCourse[value].day}</span>
@@ -55,12 +55,16 @@ export function Modal({ closeModal, value }) {
                     <MdLocationOn className="w-32 place-self-center" />
                     <span className="place-self-center font-['Consolas'] text-justify">{descriptionsCourse[value].location}</span>
                   </div>
-                  <div className="flex gap-5">
+                  {/* <div className="flex gap-5">
                     <BiBody className="place-self-center" /><span className="font-['Consolas']">{descriptionsCourse[value].capacity}</span>
-                  </div>
+                  </div> */}
                   <div className="flex gap-5">
-                    <BiArrowFromBottom className="place-self-center" /><a href={descriptionsCourse[value].link} className="font-['Consolas'] text-violet-100 rounded-md p-3 bg-white ">Incresva-se</a>
-                  </div>
+                  <Button link={descriptionsCourse[value].link} 
+                  className="sm:text-[13px] place-self-center font-['Consolas'] drop-shadow-sm hover:shadow-none duration-200 h-12 sm:w-20 md:w-32 lg:w-32 flex justify-center 
+                  items-center shadow-md shadow-black lg:text-lg md:text-lg bg-violet-150 rounded-md hover:translate-y-1 font-bold border-white" 
+                  text="Inscreva-se!"/>
+                    </div>
+                  
                 </div>
               </div>
             </div>
@@ -85,7 +89,7 @@ export function Alert({ closeModal }){
             <div className="mt-2 text-center w-full sm:ml-4">
             <div className="items-center justify-between rounded-t-md
              border-b-2 border-neutral-100 border-opacity-100 dark:border-opacity-50">
-              <h1 className="lg:text-4xl md:text-xl text-center font-['Consolas'] font-bold mb-2">
+              <h1 className="lg:text-4xl md:text-xl sm:text-xl text-center font-['Consolas'] font-bold mb-2">
                 Atenção!
               </h1>
               <button
@@ -101,7 +105,7 @@ export function Alert({ closeModal }){
             </div>
             <div className="grid place-items-center">
 
-              <p className="font-['Consolas'] w-10/12 mt-3 lg:text-[18px] md:text-[15px] leading-relaxed text-justify">
+              <p className="font-['Consolas'] w-10/12 mt-3 lg:text-base md:text-[15px] leading-relaxed text-justify">
               Solicitamos aos alunos que participaram da edição anterior do miniciurso "Radioproteção aplicada à Medicina Nuclear", na Jornada Acadêmica de 2022, que evitem se inscrever novamente a fim de permitir que os graduandos que ainda não tiveram a oportunidade de participar possam fazê-lo.
               </p>
             </div>
