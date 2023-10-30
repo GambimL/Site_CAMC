@@ -9,7 +9,7 @@ export const descriptionsCourse = [
     day: "07 Nov.",
     location: "Prédio 2 - Teatro Moacyr Scliar",
     time: " 10h-12h ",
-    capacity: "∞", 
+    capacity: "Infinita.", 
     goal: "Abordagem de conceitos teóricos e práticos de como realizar um cálculo de blindagem em radiodiagnóstico médico e odontológico. Falaremos sobre normas, legislações e softwares que abordam cálculo de blindagem em radiodiagnóstico.", 
     link: "https:alguma coisa"
   },
@@ -19,9 +19,9 @@ export const descriptionsCourse = [
     speaker: "Samara Prass dos Santos",
     description: "Os tumores cerebrais e outros tumores primários do Sistema Nervoso Central (SNC) constituem um grupo heterogêneo de tumores, os quais apresentam diferentes sinais e sintomas, além de contar com um prognóstico variável. De acordo com a Estimativa de Incidência de Câncer no Brasil 2023, o número previsto de novos casos de câncer do SNC é de 11.490 a cada ano do triênio de 2023 a 2025. Dessa forma, se torna atrativa e relevante a aplicação de técnicas de classificação automatizada por meio de Machine Learning e Inteligência Artificial como suporte para o diagnóstico clínico. Dentro deste contexto, através de uma abordagem teórica e prática, este minicurso irá propor a criação de um modelo de deep learning capaz de detectar e classificar tumores cerebrais através de imagens de ressonância magnética de um conjunto de dados disponibilizado de maneira gratuita online. Os alunos contarão com acesso a computadores para realizarem de forma interativa e simultânea a parte prática. ",
     day: "08 Nov.",
-    location: ": Prédio 1: sala 405 - Lab. Informática II.",
+    location: "Prédio 1: sala 405 - Lab. Informática II.",
     time: "10h30-12h30",
-    capacity: "20", 
+    capacity: "20.", 
     goal: "O minicurso tem como objetivo principal capacitar os estudantes na detecção de diferentes tipos de tumores cerebrais a partir do modelo de deep learning. Para isso, os alunos irão usar o recurso do Google Colab.", 
     link: "https:alguma coisa"
   },
@@ -33,7 +33,7 @@ export const descriptionsCourse = [
     day: "09 Nov.",
     location: "Prédio 2 - Teatro Moacyr Scliar",
     time: "10h-12h.",
-    capacity: "∞", 
+    capacity: "Infinita.", 
     goal: "O minicurso tem a finalidade de expor exemplos práticos das atividades e responsabilidades do físico médico no contexto da Vigilância Sanitária. Para isso, será feita apresentação e exibições de imagens com situações vivenciadas pela profissional.", 
     link: "https:alguma coisa"
   },
@@ -45,8 +45,20 @@ export const descriptionsCourse = [
     day: "11 Nov.",
     location: "Santa Casa da Misericórdia de Porto Alegre - Setor de Medicina Nuclear do Hospital Santa Rita",
     time: "8h-10h (turma 1) e 10h-12h (turma 2)",
-    capacity: "7 por turma", 
+    capacity: "7 por turma.", 
     goal: "Esta atividade tem como objetivo principal mostrar aos alunos, de maneira prática, o cotidiano de um profissional da Física Médica na Medicina Nuclear. Além disso, que os discentes compreendam os procedimentos realizados de acordo com os princípios da radioproteção e executem alguns desses procedimentos junto ao profissional que irá ministrar o minicurso.", 
+    link: "https:alguma coisa"
+  },
+  {
+    id: 1,
+    title: "Determinação da unidade monitora em planejamento radioterápico",
+    speaker: "Carolina M. Isabela L. e Matheus F.",
+    description: "Unidades monitoras são as quantidades de radiação integrada registrada no equipamento presente na radioterapia. Com o tratamento de planejamentos 3D é possível realizar diversas combinações , onde podem ser determinados órgãos de risco com imagens radiodiagnosticas, criação de múltiplos campos de radiação, estimar quantidades de dose em múltiplos pontos e a quantidade de unidades monitoras (U.M.) necessárias para administrar a fração de radiação aplicada no tecido.  Mesmo com a obtenção de U.M. a partir dos Sistemas de Planejamento de Tratamento (TPS), precisa-se garantir a qualidade do tratamento referente a entrega da dose de radiação preconizada, tornando necessário a verificação dos valores determinados da unidade monitora com um outro método independente daquele oferecido pelo sistema de planejamento em análise, com a finalidade de analisar o desvio entre eles.",
+    day: "16 Nov.",
+    location: "Prédio 3 - Sala 215",
+    time: "10h",
+    capacity: "10", 
+    goal: "Abordagem de conceitos teóricos e práticos de como realizar um cálculo de blindagem em radiodiagnóstico médico e odontológico. Falaremos sobre normas, legislações e softwares que abordam cálculo de blindagem em radiodiagnóstico", 
     link: "https:alguma coisa"
   },
 
@@ -241,27 +253,27 @@ export const descriptionSpeakers = [
     description: "Bacharela em Física, linha de formação em Física Médica, pela PUCRS. Possui MBA em Auditoria em Saúde pelo Instituto de Administração Hospitalar e Ciências da Saúde e Especialização em Ciências Radiológicas e Imaginologia pela UCS e em Física Médica do Radiodiagnóstico pelo Programa de Residência em Área Profissional de Física Médica do HCPA. Atualmente, é mestranda do PPGCM da UFRGS. ",
     avatar: '../src/assets/iana.jpeg',
     nameSpeaker: 'Iana Quintanilha de Borba', 
-    lattes: 'Lattes: http://lattes.cnpq.br/3456414924685148', 
+    lattes: 'http://lattes.cnpq.br/3456414924685148', 
   },
   {
     id: 1, 
     description: "Mestranda no Programa de Pós-Graduação em Tecnologias da Informação e Gestão em Saúde da UFCSPA, com área de concentração em Tecnologias da Informação Inteligente, e graduada em Física Médica pela mesma instituição. Atualmente, trabalha como Técnica em Infraestrutura Cloud na Atos Brasil, líder global em serviços de tecnologia. ",
     avatar: '../src/assets/samara.jpeg', 
     nameSpeaker: 'Samara Prass dos Santos', 
-    lattes: 'Lattes: http://lattes.cnpq.br/9679712535577946', 
+    lattes: 'http://lattes.cnpq.br/9679712535577946', 
   },
   {
     id: 2, 
     description: "Graduada em Física pela UFRGS e em Engenharia de Operações Eletrônicas pela PUCRS. Especialista em Gestão da Vigilância Sanitária. Atualmente, é funcionária pública ocupando o cargo de Especialista em Saúde com a função de Físico do Setor de Radiações do Centro Estadual de Vigilância em Saúde/SES/RS, com ênfase em Física Médica.",
     avatar: '../src/assets/jannete.jpeg', 
     nameSpeaker: 'Jeannette Rosangela Urtassum', 
-    lattes: 'Lattes: http://lattes.cnpq.br/1340150737262164', 
+    lattes: 'http://lattes.cnpq.br/1340150737262164', 
   },
   {
     id: 3, 
     description: "Graduado em Física pela PUCRS e Especialista em Docência no Ensino Superior. Atualmente, é mestrando em Ensino na Saúde, é sócio e físico da Prophy Proteção Radiológica e Física Médica LTDA e professor na Universitário Escola Técnica, atuando principalmente em temas atrelados: à física, à física médica, ao controle de qualidade, à proteção radiológica em mamografia e à medicina nuclear.",
     avatar: '../src/assets/alexandre.jpeg', 
     nameSpeaker: 'Alexandre Albuquerque Ferret', 
-    lattes: 'Lattes:  http://lattes.cnpq.br/3168400992448028', 
+    lattes: 'http://lattes.cnpq.br/3168400992448028', 
   }
 ]

@@ -22,8 +22,11 @@ export function Speaker(props) {
                         </p>
                     </div>
                     <div className="bg-violet-200 w-full h-1/4 rounded-br-lg flex flex-row items-center" >
-                        <p className="text-start text-[0.7rem] sm:text-base  md:text-lg px-3 font-['Consolas'] font-semibold tracking-tight">{props.lattes}</p>
-
+                        <a href={props.lattes}>
+                            <p 
+                            className="text-start text-[0.7rem] hover:cursor-pointer sm:text-base  md:text-lg px-3
+                             font-['Consolas'] font-semibold tracking-tight">Lattes:    {props.lattes}</p>
+                        </a>
                     </div>
                 </div>
             </div>

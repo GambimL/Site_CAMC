@@ -4,7 +4,7 @@ import { HamburguerMenu } from "../HamburguerMenu"
 import { useState } from "react"
 import { MenuButton } from "../Button";
 
-const titles = ["programação", "palestrantes", "opinião"]
+const titles = ["palestrantes", "opinião"]
 const menuButtonText = "Increva-se!"
 
 export function Header() {
@@ -31,7 +31,6 @@ export function Header() {
                 </img>
             </a>
             {/* <DropdownMenu /> */}
-
             <div className="md:flex justify-center hidden">
                 <Link titles={titles} />
                 <MenuButton text={menuButtonText}/>

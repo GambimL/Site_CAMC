@@ -5,10 +5,17 @@ import { TextField } from "../../components/TextField";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, FormProvider } from "react-hook-form";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import { Content } from "../../components/Schedule";
-import { MenuButton } from "../../components/Button";
+import { Button } from "../../components/Button";
 import background from "./../../assets/backgroundModel.png";
+import bioRad from "./../../../public/images/logos/bioRad.jpeg";
+import escla from "./../../../public/images/logos/escla.jpeg";
+import mpex from "./../../../public/images/logos/mpex.jpeg";
+import prophy from "./../../../public/images/logos/prophy.jpeg";
+import thorLabs from "./../../../public/images/logos/thorLabs.jpeg";
+import { Alert } from "../../components/Modal/Modal";
+import { useEffect, useState } from "react";
 
 const createMessageFormSchema = z.object({
   name: z.string().nonempty({
@@ -37,33 +44,28 @@ const createMessageFormSchema = z.object({
 })
 
 export function Home() {
+  const [openModal, setOpenModal] = useState(false);
 
+  useEffect(() => {
+    setOpenModal(true);
+  }, [])
+  
   const createMessageForm = useForm({
     resolver: zodResolver(createMessageFormSchema),
   })
 
   const onSubmit = async data => {
-    // emailjs.send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, {
-    //   from_name: data.name,
-    //   message: data.doubt,
-    //   email: data.email,
-    //   course: data.course,
-    //   phone: data.phone
-    // }, import.meta.env.VITE_PUBLIC_KEY)
-    //   .then((response) => {
-    //     console.log("E-mail enviado", response.status, response.text)
-    //   }, (err) => { console("Erro: ", err) })
+    emailjs.send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, {
+      from_name: data.name,
+      message: data.doubt,
+      email: data.email,
+      course: data.course,
+      phone: data.phone
+    }, import.meta.env.VITE_PUBLIC_KEY)
+      .then((response) => {
+        alert("E-mail enviado!");
+      }, (err) => { console("Erro: ", err) })
   };
-  // const onSubmit = async (data) => {
-  //   const resend = await new Resend();
-
-  //   resend.emails.send({
-  //     from: "onboarding@resend.dev",
-  //     to: "brenda.lima@ufcspa.edu.br",
-  //     subject: "Hello World",
-  //     html: "<p>Congrats on sending your <strong>first email</strong>!</p>"
-  //   })
-  // }
 
   const {
     handleSubmit,
@@ -74,6 +76,7 @@ export function Home() {
 
   return (
     <Layout>
+     {openModal && <Alert closeModal={setOpenModal} />}
       <div className="gap-4">
         <img src={background} className="justify-center justify-self-center" />
         <div className="col-start-2 col-span-4 space-y-10">
@@ -131,10 +134,11 @@ export function Home() {
                 />
               </div>
               <div className="col-start-1 col-end-7 grid place-content-center">
-                <MenuButton
+                <Button
                   type="submit"
                   disabled={isSubmitting}
-                  // className="bg-sky-700 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded" 
+                  className="drop-shadow-sm hover:shadow-none duration-200 h-12 w-32 flex justify-center 
+                  items-center shadow-md shadow-black text-lg font-['Consolas'] bg-violet-150 rounded-md hover:translate-y-1 font-bold border-white" 
                   text="Enviar"
                 />
               </div>
@@ -142,6 +146,18 @@ export function Home() {
           </form>
         </FormProvider>
       </div>
+      <footer className="bg-background">
+        <h1 className="p-5 dark:text-white font-['Consolas'] text-violet-100 text-4xl font-bold uppercase text-center">
+          Patrocinadores
+        </h1>
+        <div className="grid place-items-center h-96 grid-cols-5">
+          <img src={bioRad} alt="bioRad" className="grayscale hover:grayscale-0 w-32" />
+          <img src={escla} alt="escla" className="grayscale hover:grayscale-0 w-32" />
+          <img src={mpex} alt="mpex" className="grayscale hover:grayscale-0 w-32" />
+          <img src={prophy} alt="prophy" className="grayscale hover:grayscale-0 w-32" />
+          <img src={thorLabs} alt="bioRad" className="grayscale hover:grayscale-0 w-32" />
+        </div>
+      </footer>
     </Layout>
   )
 }
