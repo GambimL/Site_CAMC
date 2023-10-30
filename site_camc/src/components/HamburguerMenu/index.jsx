@@ -20,10 +20,10 @@ export function HamburguerMenu(props) {
                 <MenuButton text={"Inscreva-se!"}/>
                 {props.titles.map((title) => (
                     <div className="m-6 border-b-4 py-3 w-1/3 hover:w-1/2 cursor-pointer rounded-sm duration-100 border-solid hover:border-violet-700 group border-white capitalize">
-                        <a key={title} href={"/" + title}
+                        <a key={title} href={"/Site_CAMC/" + title}
                             className=" transition-colors 
                             duration-200 text-white group-hover:text-violet-700">
-                            {title === "programação" ? <a href={"/home/#" + title}>{title}</a>
+                            {title === "programação" ? <a href={"/Site_CAMC/#" + title}>{title}</a>
                                 : title}
                         </a>
                     </div>
