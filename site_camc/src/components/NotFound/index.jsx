@@ -12,7 +12,7 @@ export function NotFound() {
           <h1 className="text-3xl md:text-2xl lg:text-4xl font-bold">
             Página não encontrada!
           </h1>
-          <Link to="home">
+          <Link to="Site_CAMC">
             <Button text="Página Inicial" />
           </Link>
         </div>

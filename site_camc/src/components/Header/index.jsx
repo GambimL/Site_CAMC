@@ -5,7 +5,7 @@ import { useState } from "react"
 import { MenuButton } from "../Button";
 
 const titles = ["palestrantes", "opinião"]
-const menuButtonText = "Increva-se!"
+const menuButtonText = "Inscreva-se!"
 
 export function Header() {
     const [visible, setVisible] = useState(false)

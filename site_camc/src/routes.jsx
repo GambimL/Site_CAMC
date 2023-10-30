@@ -8,8 +8,8 @@ export default function MainRoutes() {
     <Routes>
       <Route path="*" element={<NotFound />} />
       <Route path="/" element={<Navigate to="/home" />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/palestrantes" element={<Speakers />} />
+      <Route path="/Site_CAMC" element={<Home />} />
+      <Route path="/Site_CAMC/palestrantes" element={<Speakers />} />
     </Routes>
   )
 }

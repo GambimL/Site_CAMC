@@ -1,11 +1,11 @@
 import styles from "./styles.module.scss";
 
-export function Button({ text, className }) {
+export function Button({ link, text, className }) {
   return (
     <div>
-      <button className={!className ? styles.btn : className}>
+      <a href={link} className={!className ? styles.btn : className}>
         {text}
-      </button>
+      </a>
     </div>
   )
 }
