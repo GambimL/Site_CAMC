@@ -1,5 +1,4 @@
 import logoFisMed from "../../assets/logofismed.png"
-import { Link } from "../Link"
 import { HamburguerMenu } from "../HamburguerMenu"
 import { useState } from "react"
 import { MenuButton } from "../Button";
@@ -14,7 +13,7 @@ export function Header() {
     }
 
     return <header
-        className="sticky top-0 z-30 flex bg-zinc-900 py-4 px-10 h-32 text-center font-bold w-full ">
+        className="sticky top-0 z-30 flex bg-zinc-900 py-4 px-10 h-32 text-center font-bold w-[600px]">
         <div
             className="container mx-auto flex h-30 
                 justify-between
@@ -30,7 +29,6 @@ export function Header() {
                 >
                 </img>
             </a>
-            {/* <DropdownMenu /> */}
             <div className="md:flex justify-start hidden">
                 <MenuButton text={menuButtonText} link={"https://siur.ufcspa.edu.br/atividades/index/3685"}/>
             </div>

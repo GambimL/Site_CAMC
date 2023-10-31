@@ -34,15 +34,15 @@ export function Modal({ closeModal, value }) {
               </div>
 
               <span className="font-['Consolas'] text-violet-100 font-bold">{descriptionsCourse[value].speaker}</span>
-              <p className="font-['Consolas'] w-11/12 mt-3 lg:text-base md:text-[15px] sm:text-[13px] leading-relaxed text-justify">
-                {descriptionsCourse[value].description} <b className="md:text-[15px] text-violet-50">Capacidade de pessoas: {descriptionsCourse[value].capacity}</b>
+              <p className="font-['Consolas'] w-11/12 mt-3 lg:text-base md:text-md sm:text-sm leading-relaxed text-justify">
+                {descriptionsCourse[value].description} <b className="md:text-md text-violet-50">Capacidade de pessoas: {descriptionsCourse[value].capacity}</b>
               </p>
               <h2 className="lg:text-2xl md:text-xl font-['Consolas'] font-bold col-start-1 col-end-8 mt-2">
                   OBJETIVO
               </h2>
-              <p className="font-['Consolas'] w-11/12 mt-3 lg:text-base sm:text-[13px] md:text-[15px] leading-relaxed text-justify">{descriptionsCourse[value].goal}</p>
+              <p className="font-['Consolas'] w-11/12 mt-3 lg:text-base sm:text-sm md:text-md leading-relaxed text-justify">{descriptionsCourse[value].goal}</p>
               <div className="items-center place-content-center mt-3 sm:flex md:p-7 space-y-3">
-                <div className="grid grid-cols-4 md:text-md lg:text-base sm:text-[13px] gap-5 place-items-center font-bold text-md">
+                <div className="grid grid-cols-4 md:text-md lg:text-base sm:text-sm gap-5 place-items-center font-bold text-md">
                   <div className="flex">
                     <BiCalendar className="w-24 place-self-center" />
                       <span className="place-self-center font-['Consolas']">{descriptionsCourse[value].day}</span>
@@ -55,14 +55,10 @@ export function Modal({ closeModal, value }) {
                     <MdLocationOn className="w-32 place-self-center" />
                     <span className="place-self-center font-['Consolas'] text-justify">{descriptionsCourse[value].location}</span>
                   </div>
-                  {/* <div className="flex gap-5">
-                    <BiBody className="place-self-center" /><span className="font-['Consolas']">{descriptionsCourse[value].capacity}</span>
-                  </div> */}
                   <div className="flex gap-5">
-                  <a href={descriptionsCourse[value].link} className="drop-shadow-sm hover:shadow-none duration-200 h-12 w-32 flex justify-center 
-                  items-center shadow-md shadow-black text-lg font-['Consolas'] bg-violet-150 rounded-md hover:translate-y-1 font-bold border-white">inscreva se</a>
-                    </div>
-                  
+                    <a href={descriptionsCourse[value].link} className="drop-shadow-sm hover:shadow-none duration-200 h-12 w-32 flex justify-center 
+                    items-center shadow-md shadow-black text-lg font-['Consolas'] bg-violet-150 rounded-md hover:translate-y-1 font-bold border-white">inscreva se</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -103,7 +99,7 @@ export function Alert({ closeModal }){
             </div>
             <div className="grid place-items-center">
 
-              <p className="font-['Consolas'] w-10/12 mt-3 lg:text-base md:text-[15px] leading-relaxed text-justify">
+              <p className="font-['Consolas'] w-10/12 mt-3 lg:text-base sm:text-sm md:text-md leading-relaxed text-justify">
               Solicitamos aos alunos que participaram da edição anterior do miniciurso "Radioproteção aplicada à Medicina Nuclear", na Jornada Acadêmica de 2022, que evitem se inscrever novamente a fim de permitir que os graduandos que ainda não tiveram a oportunidade de participar possam fazê-lo.
               </p>
             </div>
