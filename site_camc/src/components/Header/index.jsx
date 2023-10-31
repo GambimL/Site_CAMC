@@ -13,7 +13,7 @@ export function Header() {
     }
 
     return <header
-        className="sticky top-0 z-30 flex bg-zinc-900 py-4 px-10 h-32 text-center font-bold w-[600px]">
+        className="sticky top-0 z-30 flex bg-zinc-900 py-4 px-10 h-32 text-center font-bold w-[600px] sm:w-full">
         <div
             className="container mx-auto flex h-30 
                 justify-between

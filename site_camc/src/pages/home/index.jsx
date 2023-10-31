@@ -14,6 +14,7 @@ import escla from "./../../../public/images/logos/escla.png";
 import mpex from "./../../../public/images/logos/mpex.png";
 import prophy from "./../../../public/images/logos/prophy.png";
 import thorLabs from "./../../../public/images/logos/thorLabs.png";
+import phymed from "./../../../public/images/logos/phyMED.png";
 import { Alert } from "../../components/Modal/Modal";
 import { useEffect, useState } from "react";
 
@@ -150,12 +151,13 @@ export function Home() {
         <h1 className="p-5 dark:text-white font-['Consolas'] text-violet-100 text-4xl font-bold uppercase text-center">
           Patrocinadores
         </h1>
-        <div className="grid place-items-center h-96 grid-cols-5">
+        <div className="grid place-items-center h-96 grid-cols-6">
           <img src={bioRad} alt="bioRad" className="grayscale hover:grayscale-0 w-32" />
           <img src={escla} alt="escla" className="grayscale hover:grayscale-0 w-32" />
           <img src={mpex} alt="mpex" className="grayscale hover:grayscale-0 w-32" />
           <img src={prophy} alt="prophy" className="grayscale hover:grayscale-0 w-32" />
           <img src={thorLabs} alt="bioRad" className="grayscale hover:grayscale-0 w-32" />
+          <img src={phymed} alt="bioRad" className="grayscale hover:grayscale-0 w-32" />
         </div>
       </footer>
     </Layout>
