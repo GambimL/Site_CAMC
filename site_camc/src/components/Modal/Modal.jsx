@@ -4,7 +4,7 @@ import { FaRegClock } from "react-icons/fa"
 import { MdLocationOn, MdOutlineClose } from "react-icons/md"
 import { BiBody } from "react-icons/bi";
 import { BiArrowFromBottom } from "react-icons/bi";
-import { Button } from '../Button/';
+import { MenuButton } from '../Button/';
 
 export function Modal({ closeModal, value }) {
   return <>
@@ -59,10 +59,8 @@ export function Modal({ closeModal, value }) {
                     <BiBody className="place-self-center" /><span className="font-['Consolas']">{descriptionsCourse[value].capacity}</span>
                   </div> */}
                   <div className="flex gap-5">
-                  <Button link={descriptionsCourse[value].link} 
-                  className="sm:text-[13px] place-self-center font-['Consolas'] drop-shadow-sm hover:shadow-none duration-200 h-12 sm:w-20 md:w-32 lg:w-32 flex justify-center 
-                  items-center shadow-md shadow-black lg:text-lg md:text-lg bg-violet-150 rounded-md hover:translate-y-1 font-bold border-white" 
-                  text="Inscreva-se!"/>
+                  <a href={descriptionsCourse[value].link} className="drop-shadow-sm hover:shadow-none duration-200 h-12 w-32 flex justify-center 
+                  items-center shadow-md shadow-black text-lg font-['Consolas'] bg-violet-150 rounded-md hover:translate-y-1 font-bold border-white">inscreva se</a>
                     </div>
                   
                 </div>

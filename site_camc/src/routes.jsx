@@ -7,7 +7,7 @@ export default function MainRoutes() {
   return (
     <Routes>
       <Route path="*" element={<NotFound />} />
-      <Route path="/" element={<Navigate to="/home" />} />
+      <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/palestrantes" element={<Speakers />} />
     </Routes>

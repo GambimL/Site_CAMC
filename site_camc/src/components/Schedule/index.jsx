@@ -90,7 +90,7 @@ export function Content() {
         className="grid grid-cols-3 bg-inherit px-5 py-3 cursor-pointer 
         duration-500 font-bold rounded-xl hover:bg-violet-150">
           {openCollapse1 ? <BiSolidUpArrow className="self-center" /> : <BiSolidDownArrow className="self-center" />}
-          <p className="font-['Consolas'] text-xl">Quarta-feira</p>
+          <p className="font-['Consolas'] text-xl">Terça-feira</p>
         </summary>
         <div className="grid gap-6 bg-background px-5 py-3 border border-sky-900 text-sm font-light">
           <Schedule scheduleDescription={scheduleDescriptions07} id="07/11" />
@@ -100,7 +100,7 @@ export function Content() {
         <summary onClick={() => openCollapse2 ? setOpenCollapse2(false) : setOpenCollapse2(true)} 
         className="grid grid-cols-3 bg-inherit px-5 py-3 rounded-xl text-lg duration-500 cursor-pointer font-bold  hover:bg-violet-150">
           {openCollapse2 ? <BiSolidUpArrow className="self-center" /> : <BiSolidDownArrow className="self-center" />}
-          <p className="font-['Consolas'] text-xl">Quinta-feira</p>
+          <p className="font-['Consolas'] text-xl">Quarta-feira</p>
         </summary>
         <div className="grid gap-6 bg-background px-5 py-3 border border-violet-150 text-sm font-light">
           <Schedule scheduleDescription={scheduleDescriptions08} id="08/11" />
@@ -112,7 +112,7 @@ export function Content() {
             openCollapse3 ? <BiSolidUpArrow className="self-center" /> :
               <BiSolidDownArrow className="self-center" />
           }
-          <p className="font-['Consolas'] text-xl">Sexta-feira</p>
+          <p className="font-['Consolas'] text-xl">Quinta-feira</p>
         </summary>
         <div className="grid gap-6 bg-background px-5 py-3 border border-[#7c41c9] text-sm font-light">
           <Schedule scheduleDescription={scheduleDescriptions09} id="09/11" />

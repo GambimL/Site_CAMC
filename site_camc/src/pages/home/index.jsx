@@ -9,11 +9,11 @@ import emailjs from "@emailjs/browser";
 import { Content } from "../../components/Schedule";
 import { Button } from "../../components/Button";
 import background from "./../../assets/backgroundModel.png";
-import bioRad from "./../../../public/images/logos/bioRad.jpeg";
-import escla from "./../../../public/images/logos/escla.jpeg";
-import mpex from "./../../../public/images/logos/mpex.jpeg";
-import prophy from "./../../../public/images/logos/prophy.jpeg";
-import thorLabs from "./../../../public/images/logos/thorLabs.jpeg";
+import bioRad from "./../../../public/images/logos/bioRad.png";
+import escla from "./../../../public/images/logos/escla.png";
+import mpex from "./../../../public/images/logos/mpex.png";
+import prophy from "./../../../public/images/logos/prophy.png";
+import thorLabs from "./../../../public/images/logos/thorLabs.png";
 import { Alert } from "../../components/Modal/Modal";
 import { useEffect, useState } from "react";
 
@@ -146,7 +146,7 @@ export function Home() {
           </form>
         </FormProvider>
       </div>
-      <footer className="bg-background">
+      <footer className=" bg-zinc-800">
         <h1 className="p-5 dark:text-white font-['Consolas'] text-violet-100 text-4xl font-bold uppercase text-center">
           Patrocinadores
         </h1>

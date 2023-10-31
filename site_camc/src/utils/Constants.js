@@ -11,7 +11,7 @@ export const descriptionsCourse = [
     time: " 10h-12h ",
     capacity: "Infinita.", 
     goal: "Abordagem de conceitos teóricos e práticos de como realizar um cálculo de blindagem em radiodiagnóstico médico e odontológico. Falaremos sobre normas, legislações e softwares que abordam cálculo de blindagem em radiodiagnóstico.", 
-    link: "https:alguma coisa"
+    link: "https://siur.ufcspa.edu.br/atividades/index/3731"
   },
   {
     id: 1,
@@ -23,7 +23,7 @@ export const descriptionsCourse = [
     time: "10h30-12h30",
     capacity: "20.", 
     goal: "O minicurso tem como objetivo principal capacitar os estudantes na detecção de diferentes tipos de tumores cerebrais a partir do modelo de deep learning. Para isso, os alunos irão usar o recurso do Google Colab.", 
-    link: "https:alguma coisa"
+    link: "https://siur.ufcspa.edu.br/atividades/index/3708"
   },
   {
     id: 2,
@@ -49,18 +49,7 @@ export const descriptionsCourse = [
     goal: "Esta atividade tem como objetivo principal mostrar aos alunos, de maneira prática, o cotidiano de um profissional da Física Médica na Medicina Nuclear. Além disso, que os discentes compreendam os procedimentos realizados de acordo com os princípios da radioproteção e executem alguns desses procedimentos junto ao profissional que irá ministrar o minicurso.", 
     link: "https:alguma coisa"
   },
-  {
-    id: 1,
-    title: "Determinação da unidade monitora em planejamento radioterápico",
-    speaker: "Carolina M. Isabela L. e Matheus F.",
-    description: "Unidades monitoras são as quantidades de radiação integrada registrada no equipamento presente na radioterapia. Com o tratamento de planejamentos 3D é possível realizar diversas combinações , onde podem ser determinados órgãos de risco com imagens radiodiagnosticas, criação de múltiplos campos de radiação, estimar quantidades de dose em múltiplos pontos e a quantidade de unidades monitoras (U.M.) necessárias para administrar a fração de radiação aplicada no tecido.  Mesmo com a obtenção de U.M. a partir dos Sistemas de Planejamento de Tratamento (TPS), precisa-se garantir a qualidade do tratamento referente a entrega da dose de radiação preconizada, tornando necessário a verificação dos valores determinados da unidade monitora com um outro método independente daquele oferecido pelo sistema de planejamento em análise, com a finalidade de analisar o desvio entre eles.",
-    day: "16 Nov.",
-    location: "Prédio 3 - Sala 215",
-    time: "10h",
-    capacity: "10", 
-    goal: "Abordagem de conceitos teóricos e práticos de como realizar um cálculo de blindagem em radiodiagnóstico médico e odontológico. Falaremos sobre normas, legislações e softwares que abordam cálculo de blindagem em radiodiagnóstico", 
-    link: "https:alguma coisa"
-  },
+
 
 ]
 
@@ -76,7 +65,7 @@ export const scheduleDescriptions07 = [
     id: 1,
     title: "Abertura",
     location: "Prédio 2 - Teatro Moacyr Scliar",
-    time: "13h50 - 14h00",
+    time: "13h30 - 14h00",
   },
   {
     id: 2,
@@ -96,7 +85,7 @@ export const scheduleDescriptions07 = [
     id: 4,
     title: "Coffee Break",
     location: "3º Andar Prédio 2",
-    time: "15h50 - 16h20",
+    time: "16h00 - 16h30",
   },
   {
     id: 5,
@@ -139,7 +128,7 @@ export const scheduleDescriptions08 = [
     id: 1,
     title: "Abertura",
     location: "Prédio 2 - Teatro Moacyr Scliar",
-    time: "13h50 - 14h00",
+    time: "13h30 - 14h00",
   },
   {
     id: 2,
@@ -203,7 +192,7 @@ export const scheduleDescriptions09 = [
     id: 1,
     title: "Abertura",
     location: "Prédio 2 - Teatro Moacyr Scliar",
-    time: "13h50 - 14h00",
+    time: "13h30 - 14h00",
   },
   {
     id: 2,
@@ -243,7 +232,7 @@ export const scheduleDescriptions09 = [
     id: 7,
     title: "Encerramento",
     location: "Prédio 2 - Teatro Moacyr Scliar",
-    time: "20h00",
+    time: "19h00",
   }
 ]
 
